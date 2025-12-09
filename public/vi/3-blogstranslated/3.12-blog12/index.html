@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="danhanh.nguyen1643@gmail.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 12 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1765275113" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765275113" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765275113" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765275113" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765275113" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765275113" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765275113" rel="stylesheet">
+    <link href="../../../css/theme.css?1765275113" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765275113" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1765275113" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1765275113"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.12-blog12/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1765275113"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765275113"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1765275113"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký hàng tuần"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký hàng tuần 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12. </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.5-blog5/">
+     <b> 3.5. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.7-blog7/"
+  title="Blog 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.7-blog7/">
+     <b> 3.7. </b> Blog 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.8-blog8/"
+  title="Blog 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.8-blog8/">
+     <b> 3.8. </b> Blog 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.9-blog9/"
+  title="Blog 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.9-blog9/">
+     <b> 3.9. </b> Blog 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.10-blog10/"
+  title="Blog 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.10-blog10/">
+     <b> 3.10. </b> Blog 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.11-blog11/"
+  title="Blog 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.11-blog11/">
+     <b> 3.11. </b> Blog 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.12-blog12/"
+  title="Blog 12"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.12-blog12/">
+     <b> 3.12. </b> Blog 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/"
+  title="Thiết lập Infrastructure với Terraform"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/">
+     <b> 5.3. </b> Thiết lập Infrastructure với Terraform 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.1-provider/"
+  title="Cấu hình Provider"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.1-provider/">
+     <b> 5.3.1. </b> Cấu hình Provider 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.2-variables/"
+  title="Cấu hình Variables"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.2-variables/">
+     <b> 5.3.2. </b> Cấu hình Variables 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.3-env-variable/"
+  title="Cấu hình Variables cục bộ"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.3-env-variable/">
+     <b> 5.3.3. </b> Cấu hình Variables cục bộ 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/"
+  title="Cấu hình S3 Bucket"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/">
+     <b> 5.3.4. </b> Cấu hình S3 Bucket 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.5-ecr/"
+  title="Cấu hình ECR Repository"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.5-ecr/">
+     <b> 5.3.5. </b> Cấu hình ECR Repository 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/"
+  title="Cấu hình ECS Cluster"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/">
+     <b> 5.3.6. </b> Cấu hình ECS Cluster 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.7-alb/"
+  title="Cấu hình Application Load Balancer và Target Group"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.7-alb/">
+     <b> 5.3.7. </b> Cấu hình Application Load Balancer và Target Group 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.8-iam/"
+  title="Cấu hình IAM Roles và Policies"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.8-iam/">
+     <b> 5.3.8. </b> Cấu hình IAM Roles và Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/"
+  title="Cấu hình CloudWatch Logs &amp; ECS Service"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/">
+     <b> 5.3.9. </b> Cấu hình CloudWatch Logs &amp; ECS Service 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.10-budgets/"
+  title="Cấu hình AWS Budgets"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.10-budgets/">
+     <b> 5.3.10. </b> Cấu hình AWS Budgets 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.11-vpc/"
+  title="Cấu hình VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.11-vpc/">
+     <b> 5.3.11. </b> Cấu hình VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-docker-deploybe/"
+  title="Build Docker Image và Deploy Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-docker-deploybe/">
+     <b> 5.4. </b> Build Docker Image và Deploy Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/"
+  title="Triển khai Frontend với Amazon Amplify và thực hiện kết nối an toàn với API của Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/">
+     <b> 5.5 </b> Triển khai Frontend với Amazon Amplify và thực hiện kết nối an toàn với API của Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.1-deploy-frontend/"
+  title="Triển khai Frontend với Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.1-deploy-frontend/">
+     <b> 5.5.1 </b> Triển khai Frontend với Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.2-connect-be-fe/"
+  title="Cấu hình để kết nối giữa Frontend và Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.2-connect-be-fe/">
+     <b> 5.5.2 </b> Cấu hình để kết nối giữa Frontend và Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.3-custom-domain-be/"
+  title="Cấu hình Custom Domain với Route53 và xác thực SSL với AWS Certificate Manager"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.3-custom-domain-be/">
+     <b> 5.5.3 </b> Cấu hình Custom Domain với Route53 và xác thực SSL với AWS Certificate Manager 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/"
+  title="Tùy chỉnh Domain cho Amplify Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/">
+     <b> 5.5.4 </b> Tùy chỉnh Domain cho Amplify Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/workshop-template/3-blogstranslated/3.12-blog12/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/workshop-template/vi/3-blogstranslated/3.12-blog12/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 12
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#để-tôi-giới-thiệu-cho-bạn-cách-mà-volume-clones-hoạt-động">Để tôi giới thiệu cho bạn cách mà Volume Clones hoạt động.</a></li>
+        <li><a href="#những-điều-cần-biết">Những điều cần biết</a></li>
+        <li><a href="#giá-cả-và-tính-khả-dụng">Giá cả và tính khả dụng</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 12
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="giới-thiệu-amazon-ebs-volume-clones-tạo-các-bản-sao-tức-thì-cho-ebs-volumes-của-bạn">Giới thiệu Amazon EBS Volume Clones: Tạo các bản sao tức thì cho EBS volumes của bạn</h1>
+<p>Với tư cách là người đã làm việc tại <a href="https://en.wikipedia.org/wiki/Sun_Microsystems">Sun Microsystems</a>, nơi mà <a href="https://en.wikipedia.org/wiki/ZFS">ZFS</a> được phát minh, tôi luôn yêu thích làm việc với các hệ thống lưu trữ có khả năng tạo bản sao volume tức thì cho nhu cầu phát triển và kiểm thử của mình.</p>
+<p>Hôm nay, tôi rất vui khi chia sẻ rằng AWS đang mang điều có khả năng tương tự cho <a href="https://aws.amazon.com/ebs/">Amazon Elastic Block Store (Amazon EBS)</a> với việc ra mắt Amazon EBS Volume Clones, một tính năng mới cho phép bạn tạo các bản sao tức thì ở một thời điểm cụ thể cho các EBS volume của mình bên trong cùng một Availability Zone.</p>
+<p>Nhiều khách hàng cần tạo nhiều bản sao về dữ liệu production của họ để hỗ trợ các hoạt động phát triển và kiểm thử trong một môi trường phi production riêng biệt. Cho đến nay, quy trình này đã yêu cầu tạo một EBS snapshot ( được lưu trữ trong <a href="https://aws.amazon.com/s3/">Amazon Simple Storage Service (Amazon S3)</a> ) và sau đó tạo mới một volume từ snapshot đó. Mặc dù cách tiếp cận này vẫn hoạt động, quy trình này tạo ra gánh nặng vận hành do có nhiều bước.</p>
+<p>Với Amazon EBS Volume Clones, bây giờ bạn có thể tạo ra các bản sao EBS volume của bạn với một lệnh gọi API hoặc chọn trên giao diện. Các volume được sao chép luôn sẵn sàng trong vài giây và cung cấp truy cập đến dữ liệu của bạn ngay lập tức với độ trễ một chữ số mili giây. Điều này làm cho tính năng Volume Clones đặc biệt hữu ích cho việc cài đặt tùy chỉnh nhanh chóng ở môi trường kiểm thử với dữ liệu production hoặc tạo ra những bản sao tạm thời của cơ sở dữ liệu cho mục đích phát triển.</p>
+<h3 id="để-tôi-giới-thiệu-cho-bạn-cách-mà-volume-clones-hoạt-động">Để tôi giới thiệu cho bạn cách mà Volume Clones hoạt động.</h3>
+<p>Ở bài viết này, tôi đã tạo ra một ví dụ nho nhỏ về  <a href="https://aws.amazon.com/ec2/">Amazon Elastic Compute Cloud (Amazon EC2)</a>, với một volume được đính kèm. Tôi đã tạo một tệp ở hệ thống tệp gốc với dòng lệnh <code>echo &quot;Hello CopyVolumes&quot; &gt; hello.txt</code> .</p>
+<p>Để bắt đầu việc sao chép, tôi mở <a href="https://console.aws.amazon.com/">AWS Management Console</a> ở trên trình duyệt và tôi điều hướng đến <strong>EC2</strong>, <strong>Elastic Block Store</strong>, <strong>Volumes</strong>. Tôi chọn volume mà tôi muốn sao chép.</p>
+<p>Lưu ý rằng, tại thời điểm công bố bài viết này, chỉ có các volume đã được mã hóa mới được sao chép.</p>
+<p>Trong mục lục <strong>Actions</strong>, tôi chọn tùy chọn <strong>Copy Volume</strong>.</p>
+<p><img src="../../../images/3-BlogsTranslated/3.12-Blog12/IMG_1.png" alt=""></p>
+<p>Kế tiếp, tôi chọn chi tiết của volume đích. Tôi có thể thay đổi Volume type và điều chỉnh thông số <strong>Size</strong>, <strong>IOPS</strong>, và <strong>Throughput</strong>. Tôi chọn <strong>Copy volume</strong> để bắt đầu hoạt động Volume Clone.</p>
+<p><img src="../../../images/3-BlogsTranslated/3.12-Blog12/IMG_2.png" alt=""></p>
+<p>Volume được sao chép sẽ chuyển sang trạng thái <strong>Creating</strong> và sẵn sàng để sử dụng trong vòng vài giây. Sau đó, tôi có thể đính kèm nó vào trong một phiên bản EC2 và bắt đầu sử dụng nó ngay lập tức.</p>
+<p>Khối dữ liệu đã được sao chép từ volume nguồn và được viết vào volume bản sao ở chế độ nền. Volume sẽ duy trì ở trạng thái <strong>Initializing</strong> cho đến khi quá trình này hoàn thành. Tôi có thể theo dõi tiến trình của nó với <code>describe-volume-status</code> <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVolumeStatus.html">API</a>. Hoạt động khởi tạo này không ảnh hướng đến hiệu suất của volume nguồn. Tôi có thể tiếp tục sử dụng nó bình thường trong suốt quá trình sao chép.</p>
+<p>Tôi rất thích volume được sao chép có thể sử dụng được ngay lập tức. Tôi không cần phải chờ đợi nó khởi tạo hoàn tất. Trong suốt giai đoạn khởi tạo, volume đã được sao chép của tôi sẽ cung cấp hiệu năng dựa trên mức thấp nhất sau : mức cơ bản là 3,000 IOPS và 125 MiB/s, hiệu năng đã cấu hình của volume nguồn, hoặc hiệu năng đã cấu hình của volume bản sao.</p>
+<p>Sau quá trình khởi tạo hoàn thành, volume bản sao trở thành bản độc lập đầy đủ của volume nguồn và cung cấp đầy đủ hiệu năng đã cấu hình.</p>
+<p><img src="../../../images/3-BlogsTranslated/3.12-Blog12/IMG_3.png" alt=""></p>
+<p>Ngoài ra, tôi có thể sử dụng <a href="https://aws.amazon.com/cli/">AWS Command Line Interface (AWS CLI)</a> để bắt đầu việc sao chép :</p>
+<pre tabindex="0"><code>aws ec2 copy-volumes                          \
+     --source-volume-id vol-1234567890abcdef0 \
+     --size 500                               \
+     --volume-type gp3
+</code></pre><p>Sau khi volume bàn được đã được tạo, tôi đính kèm nó vào trong phiên bản EC2 của mình và mount nó. Tôi có thể kiểm tra tệp mà tôi đã tạo lúc đầu có tồn tại không.</p>
+<p>Đầu tiên, tôi đính kèm volume từ laptop của mình, sử dụng lệnh attach-volume :</p>
+<pre tabindex="0"><code>aws ec2 attach-volume \
+         --volume-id &#39;vol-09b700e3a23a9b4ad&#39; \
+         --instance-id &#39;i-079e6504ad25b029e&#39;   \
+         --device &#39;/dev/sdb&#39;
+</code></pre><p>Sau đó, tôi kết nối đến phiên bản, và tôi đánh các lệnh sau :</p>
+<pre tabindex="0"><code>$ sudo lsblk -f
+NAME          FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+nvme0n1                                                                              
+├─nvme0n1p1   xfs          /     49e26d9d-0a9d-4667-b93e-a23d1de8eacd    6.2G    22% /
+└─nvme0n1p128 vfat   FAT16       3105-2F44                               8.6M    14% /boot/efi
+nvme1n1                                                                              
+├─nvme1n1p1   xfs          /     49e26d9d-0a9d-4667-b93e-a23d1de8eacd                
+└─nvme1n1p128 vfat   FAT16       3105-2F44     
+
+$ sudo mount -t xfs /dev/nvme1n1p1 /data
+
+$ df -h
+Filesystem        Size  Used Avail Use% Mounted on
+devtmpfs          4.0M     0  4.0M   0% /dev
+tmpfs             924M     0  924M   0% /dev/shm
+tmpfs             370M  476K  369M   1% /run
+/dev/nvme0n1p1    8.0G  1.8G  6.2G  22% /
+tmpfs             924M     0  924M   0% /tmp
+/dev/nvme0n1p128   10M  1.4M  8.7M  14% /boot/efi
+tmpfs             185M     0  185M   0% /run/user/1000
+/dev/nvme1n1p1    8.0G  1.8G  6.2G  22% /data
+
+$ cat /data/home/ec2-user/hello.txt 
+Hello CopyVolumes
+</code></pre><h3 id="những-điều-cần-biết">Những điều cần biết</h3>
+<p>Volume Clones tạo ra bản sao ở trên cùng một AZ với volume nguồn của bạn. Bạn chỉ có thể tạo những bản sao từ volumes được mã hóa, và kích thước của bản sao cần phải bằng hoặc lớn hơn volume nguồn.</p>
+<p>Volume Clones tạo ra các bản sao nhất quán tại thời điểm xảy ra sự cố cho các volume của bạn. giống hệt như snapshot. Để đạt được tính nhất quán ở cấp độ ứng dụng, bạn cần phải tạm dừng hoạt động I/O của ứng dụng trước khi tạo ra bản sao. Ví dụ, với cơ sở dữ liệu Postgre SQL, bạn có thể sử dụng các hàm <code>pg_start_backup()</code> và <code>pg_stop_backup()</code> để tạm dừng viết và tạo bản sao nhất quán. Ở cấp độ điều hành trên Linux với XFS, bạn có thể sử dụng lệnh <code>xfs_freeze</code> để đình chỉ tạm thời và khôi phục quyền truy cập đến hệ thống tệp và đảm bảo mọi thứ đã được lưu vào bộ nhớ đệm được viết vào ổ đĩa.</p>
+<p>Mặc dù Volume Clones tạo ra bản sao ngay tại thời điểm cụ thể, nó mang tính bổ sung chứ không thay thế EBS snapshot cho mục đích sao lưu. EBS snapshots vẫn là giải pháp được khuyến nghị dành cho việc sao lưu dữ liệu và bảo vệ chống lại các sự cố ở cấp độ AZ và cấp độ volume. Snapshot cung cấp các bản sao lưu gia tăng lên Amazon S3 với độ bền 11 số 9, so với Volume Clones vốn duy trì độ bền của EBS volume ( 99.999% cho io2, 99,9% cho kiểu volume khác ). Hãy cân nhắc sử dụng tính năng Volume Clones cụ thể dành cho các kịch bản môi trường kiểm thử và phát triển nơi mà bạn cần truy cập tức thì để vào volume bản sao.</p>
+<p>Các volume bản sao tồn tại độc lập với các volume nguồn và tiếp tục phát sinh chi phí EBS volume tiêu chuẩn cho đến khi bạn xóa chúng đi. Để quản lý hiệu quả chi phí, thực hiện quyền quản trị để xác định và xóa các volume được sao chép mà không còn cần thiết cho các hoạt động phát triển hay kiếm thử của bạn nữa.</p>
+<h3 id="giá-cả-và-tính-khả-dụng">Giá cả và tính khả dụng</h3>
+<p>Volume Clones hỗ trợ mọi loại EBS volume và làm việc với volume trên cùng một tài khoản AWS và AZ. Tình năng mới này đã có sẵn ở mọi <a href="https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#region">Regions</a> thuộc về thương mại của AWS, <a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/">Local Zones</a> được chọn, và trong <a href="https://aws.amazon.com/govcloud-us/">AWS GovCloud (US)</a>.</p>
+<p>Về giá cả, bạn sẽ bị tính chi phí một lần cho mỗi GiB dữ liệu ở volume nguồn tại thời điểm khởi tạo, cùng với mức giá EBS tiêu chuẩn cho volume mới.</p>
+<p>Tôi thấy tính năng Volume Clones đặc biệt có giá trị cho các khối lượng công việc liên quan đến cơ sở dữ liệu và các kịch bản tích hợp liên tục (CI). Ví dụ, bạn có thể nhanh chóng tạo một bản sao của cơ sở dữ liệu production để kiểm thử các tính năng mới hoặc khắc phục sự cố mà không làm ảnh hưởng đến môi trường production của bạn hoặc phải chờ dữ liệu được nạp đầy đủ từ Amazon S3.</p>
+<p>Để bắt đầu với Amazon EBS Volume Clones, truy cập <a href="https://console.aws.amazon.com/ec2/home#Volumes:">Amazon EBS section on the console</a> hoặc xem <a href="https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copying-volume.html">EBS documentation</a>. Tôi rất mong được nghe về cách bạn sử dụng tính năng này để cải thiện các quy trình phát triển của mình.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.11-blog11/" title="Blog 11"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/4-eventparticipated/" title="Các events đã tham gia" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1765275113"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765275113"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765275113"></script>
+    <script src="../../../js/jquery.sticky.js?1765275113"></script>
+    <script src="../../../js/featherlight.min.js?1765275113"></script>
+    <script src="../../../js/highlight.pack.js?1765275113"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765275113"></script>
+    <script src="../../../js/learn.js?1765275113"></script>
+    <script src="../../../js/hugo-learn.js?1765275113"></script>
+
+    <link href="../../../mermaid/mermaid.css?1765275113" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765275113"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

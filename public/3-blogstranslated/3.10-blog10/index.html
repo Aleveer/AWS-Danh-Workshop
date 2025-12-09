@@ -1,0 +1,2530 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="danhanh.nguyen1643@gmail.com" />
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Blog 10 :: Internship Report</title>
+
+    
+    <link href="../../css/nucleus.css?1765275112" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765275112" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765275112" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765275112" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765275112" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765275112" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765275112" rel="stylesheet">
+    <link href="../../css/theme.css?1765275112" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765275112" rel="stylesheet">
+    
+    <link href="../../css/theme-workshop.css?1765275112" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1765275112"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../3-blogstranslated/3.10-blog10/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1765275112"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765275112"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1765275112"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Project Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/">
+     <b> 2. </b> Project Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.5-blog5/">
+     <b> 3.5. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.7-blog7/"
+  title="Blog 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.7-blog7/">
+     <b> 3.7. </b> Blog 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.8-blog8/"
+  title="Blog 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.8-blog8/">
+     <b> 3.8. </b> Blog 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.9-blog9/"
+  title="Blog 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.9-blog9/">
+     <b> 3.9. </b> Blog 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.10-blog10/"
+  title="Blog 10"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.10-blog10/">
+     <b> 3.10. </b> Blog 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.11-blog11/"
+  title="Blog 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.11-blog11/">
+     <b> 3.11. </b> Blog 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.12-blog12/"
+  title="Blog 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.12-blog12/">
+     <b> 3.12. </b> Blog 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title="Prerequisite"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Prerequisite 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/"
+  title="Infrastructure Setup with Terraform"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/">
+     <b> 5.3. </b> Infrastructure Setup with Terraform 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.1-provider/"
+  title="Configure Provider"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.1-provider/">
+     <b> 5.3.1. </b> Configure Provider 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.2-variables/"
+  title="Configure Variables"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.2-variables/">
+     <b> 5.3.2. </b> Configure Variables 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.3-env-variable/"
+  title="Configure Local Variables"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.3-env-variable/">
+     <b> 5.3.3. </b> Configure Local Variables 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/"
+  title="Configure S3 Bucket"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/">
+     <b> 5.3.4. </b> Configure S3 Bucket 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.5-ecr/"
+  title="Configure ECR Repository"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.5-ecr/">
+     <b> 5.3.5. </b> Configure ECR Repository 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/"
+  title="Configure ECS Cluster"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/">
+     <b> 5.3.6. </b> Configure ECS Cluster 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.7-alb/"
+  title="Configure Application Load Balancer and Target Group"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.7-alb/">
+     <b> 5.3.7. </b> Configure Application Load Balancer and Target Group 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.8-iam/"
+  title="Configure IAM Roles and Policies"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.8-iam/">
+     <b> 5.3.8. </b> Configure IAM Roles and Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/"
+  title="Configure CloudWatch Logs &amp; ECS Service"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/">
+     <b> 5.3.9. </b> Configure CloudWatch Logs &amp; ECS Service 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.10-budgets/"
+  title="Configure AWS Budgets"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.10-budgets/">
+     <b> 5.3.10. </b> Configure AWS Budgets 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.11-vpc/"
+  title="Configure AWS VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.11-vpc/">
+     <b> 5.3.11. </b> Configure AWS VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-docker-deploybe/"
+  title="Build Docker Image and Deploy Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-docker-deploybe/">
+     <b> 5.4. </b> Build Docker Image and Deploy Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/"
+  title="Deploy Frontend with Amazon Amplify and establish a secure connection with the Backend API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/">
+     <b> 5.5 </b> Deploy Frontend with Amazon Amplify and establish a secure connection with the Backend API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.1-deploy-frontend/"
+  title="Deploy Frontend with Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.1-deploy-frontend/">
+     <b> 5.5.1 </b> Deploy Frontend with Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.2-connect-be-fe/"
+  title="Configure to connect Frontend and Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.2-connect-be-fe/">
+     <b> 5.5.2 </b> Configure to connect Frontend and Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.3-custom-domain-be/"
+  title="Configure Custom Domain with Route53 and SSL verification with AWS Certificate Manager"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.3-custom-domain-be/">
+     <b> 5.5.3 </b> Configure Custom Domain with Route53 and SSL verification with AWS Certificate Manager 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/"
+  title="Customize Domain for Amplify Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/">
+     <b> 5.5.4 </b> Customize Domain for Amplify Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cleanup/"
+  title="Clean up"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Clean up 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Evaluation"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../6-self-evaluation/">
+    <b>6.</b> Self-Evaluation 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../7-feedback/">
+    <b>7.</b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/workshop-template/3-blogstranslated/3.10-blog10/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/workshop-template/vi/3-blogstranslated/3.10-blog10/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Internship Report</a> > <a href='../../3-blogstranslated/'>Translated Blogs</a> > Blog 10
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-power-of-dapr-and-amazon-eks">The Power of Dapr and Amazon EKS</a></li>
+    <li><a href="#service-invocation-and-state-management-with-dapr">Service Invocation and State Management with Dapr</a></li>
+    <li><a href="#application-architecture">Application Architecture</a></li>
+    <li><a href="#application-and-service-invocations">Application and Service invocations</a></li>
+    <li><a href="#connect-an-application-to-dapr-on-amazon-eks">Connect an application to Dapr on Amazon EKS</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#1-set-up-amazon-eks-cluster">1. Set up Amazon EKS Cluster</a></li>
+        <li><a href="#2-install-dapr-on-your-amazon-eks-cluster">2. Install DAPR on your Amazon EKS cluster</a></li>
+        <li><a href="#3-set-up-amazon-elasticache-as-state-store">3. Set up Amazon ElastiCache as state store</a></li>
+        <li><a href="#4-sample-application">4. Sample Application</a></li>
+        <li><a href="#5-configuring-the-dapr-state-store-component">5. Configuring the Dapr State Store Component</a></li>
+        <li><a href="#6-deploying-microservices-with-dapr-sidecars">6. Deploying Microservices with Dapr Sidecars</a></li>
+        <li><a href="#7-validating-your-dapr-enabled-microservices">7. Validating your Dapr enabled Microservices</a></li>
+        <li><a href="#8-visualizing-your-dapr-components-with-the-dashboard">8. Visualizing your Dapr Components with the Dashboard</a></li>
+      </ul>
+    </li>
+    <li><a href="#clean-up">Clean up</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 10
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="accelerate-microservices-development-with-dapr-and-amazon-eks">Accelerate Microservices Development with DAPR and Amazon EKS</h1>
+<p>Microservices and containers are revolutionizing how modern applications are built, deployed, and managed in the cloud. However, developing and operating microservices can introduce significant complexity, often requiring developers to spend valuable time on cross-cutting concerns like service discovery, state management, and observability.</p>
+<p><a href="https://dapr.io/">Dapr</a> (Distributed Application Runtime) is an open source runtime for building microservices on cloud and edge. It provides platform-agnostic building blocks like service discovery, state management, pub/sub messaging, and observability out of the box. Dapr graduated from the <a href="https://www.cncf.io/">Cloud Native Computing Foundation (CNCF)</a> on Oct. 30, 2024, marking a major milestone in the project’s journey.</p>
+<p>When combined with <a href="https://aws.amazon.com/eks/">Amazon Elastic Kubernetes Service (Amazon EKS)</a>, a managed Kubernetes service from AWS, Dapr can accelerate the adoption of microservices and containers, enabling developers to focus on writing business logic without worrying about infrastructure plumbing. Amazon EKS makes managing Kubernetes clusters easy, enabling effortless scaling as workloads change. In this blog post we’ll explore how Dapr simplifies microservices development on Amazon EKS and quickly demonstrate how to deploy a sample application on EKS using Dapr.</p>
+<h2 id="the-power-of-dapr-and-amazon-eks">The Power of Dapr and Amazon EKS</h2>
+<p>The combination of Dapr and Amazon EKS provides a powerful platform for building robust and scalable microservices. Some of the benefits include:</p>
+<ol>
+<li><strong>Increased Portability</strong>: With Dapr and Amazon EKS, microservices can be deployed to any standard Kubernetes cluster, providing increased portability across environments.</li>
+<li><strong>Improved Resiliency</strong>: Dapr’s resiliency constructs, such as retries and circuit breakers, combined with Amazon EKS’ automated container restarts, improve overall service availability and uptime.</li>
+<li><strong>Seamless Observability</strong>: Dapr’s monitoring integrations and Amazon EKS’ native CloudWatch monitoring deliver end-to-end visibility into microservices.</li>
+<li><strong>Accelerated Innovation</strong>: Dapr accelerates microservices development, while Amazon EKS streamlines cluster operations, enabling developers to focus on business logic rather than infrastructure.</li>
+<li><strong>Separation of Concerns</strong>: Dapr handles cross-cutting concerns like service discovery and pub-sub messaging, enabling clearer separation of concerns in microservices architectures.</li>
+<li><strong>AWS Service Integration</strong>: Dapr building block’s integration with AWS services provides access to a rich ecosystem of capabilities for building robust microservices on Amazon EKS. Some examples are Amazon Dynamo DB, AWS Secrets Manager, AWS Parameter Store, Amazon SNS, Amazon SQS, Amazon Kinesis and Amazon S3.</li>
+</ol>
+<h2 id="service-invocation-and-state-management-with-dapr">Service Invocation and State Management with Dapr</h2>
+<p>We’ll start by diving into two essential building blocks of Dapr functionality: service invocation and state management.</p>
+<p><a href="https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/">Service Invocation</a>: Seamless and reliable communication between microservices is crucial. However, developers often struggle with complex tasks like service discovery, standardizing APIs, securing communication channels, handling failures gracefully, and implementing observability. Your services can effortlessly communicate with each other using industry-standard protocols like gRPC and HTTP/HTTPS. Service invocation handles all the heavy lifting, from service registration and discovery to request retries, encryption, access control, and distributed tracing.</p>
+<p><a href="https://docs.dapr.io/developing-applications/building-blocks/state-management/state-management-overview/">State Management</a> : Dapr’s state management building block simplifies the way developers work with state in their applications. It provides a consistent API for storing and retrieving state data, regardless of the underlying state store (e.g., ElastiCache, AWS DynamoDB, Azure Cosmos DB). This abstraction enables developers to build stateful applications without worrying about the complexities of managing and scaling state stores.</p>
+<h2 id="application-architecture">Application Architecture</h2>
+<p>In this diagram, we have two microservices: a Python app and a Node.js app. The Python app generates order data and invokes the <code>/neworder</code> endpoint exposed by the Node.js app. The Node.js app writes the incoming order data to a state store (in this case, Amazon ElastiCache) and returns an order ID to the Python app as a response.</p>
+<p>By leveraging Dapr’s service invocation building block, the Python app can seamlessly communicate with the Node.js app without worrying about service discovery, API standardization, communication channel security, failure handling, or observability. It implements mTLS to have secure service to service communication. Dapr handles these cross-cutting concerns, allowing developers to focus on writing the core business logic.</p>
+<p>Additionally, Dapr’s state management building block simplifies how the Node.js app interacts with the state store (<a href="https://aws.amazon.com/elasticache/">Amazon ElastiCache</a>). Dapr provides a consistent API for storing and retrieving state data, abstracting away the complexities of managing and scaling the underlying state store. This abstraction enables developers to build stateful applications without worrying about the intricacies of state store management.</p>
+<p>The Amazon EKS cluster hosts a namespace called <code>dapr-system</code>, which contains the Dapr control plane components. The <code>dapr-sidecar-injector</code> automatically injects a Dapr runtime into the pods of Dapr-enabled microservices.</p>
+<p><img src="../../images/3-BlogsTranslated/3.10-Blog10/Dapr-Architecture_1.png" alt=""></p>
+<h2 id="application-and-service-invocations">Application and Service invocations</h2>
+<p>This application architecture diagram has these service invocation steps.</p>
+<ol>
+<li>The order generator service (Python app) invokes Node app’s method /neworder. This request is sent to the local Dapr sidecar which is running in the same pod as the Python app.</li>
+<li>Dapr resolves the target app by using the Amazon EKS cluster’s DNS provider and sends the request to Node app’s sidecar.</li>
+<li>The Node app’s sidecar then sends the request to Node app microservice.</li>
+<li>Node app then writes the order ID received from Python app to Amazon ElastiCache.</li>
+<li>The Node app sends the response to its local Dapr sidecar.</li>
+<li>Node app’s side car forwards the response to Python app’s Dapr sidecar.</li>
+<li>Python app side car returns the response to Python app which had initiated the request to Node app’s method /neworder.</li>
+</ol>
+<h2 id="connect-an-application-to-dapr-on-amazon-eks">Connect an application to Dapr on Amazon EKS</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>In order to deploy a sample application on Amazon EKS using Dapr, follow along with this post. You should have the following:</p>
+<ul>
+<li>An AWS account. If you don’t have one, you can <a href="https://portal.aws.amazon.com/billing/signup#/start">sign up</a> for one.</li>
+<li>An AWS Identity and Access Management (IAM) user with proper permissions – The IAM security principal that you’re using must have permissions to work with Amazon EKS IAM roles, service linked roles, AWS CloudFormation, a VPC, and related resources. For more information, see <a href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastickubernetesservice.html">Actions, resources, and condition keys for Amazon Elastic Container Service for Kubernetes</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html">create a service-linked role</a> in the IAM User Guide.</li>
+</ul>
+<p>To understand how Dapr works on Amazon EKS, let’s set up an Amazon EKS cluster and deploy a sample application. Then we’ll install Dapr runtime and apply Dapr configurations to the sample microservices. We’ll next test out the sample application and visualize Dapr components on a Dapr dashboard.</p>
+<h3 id="1-set-up-amazon-eks-cluster">1. Set up Amazon EKS Cluster</h3>
+<p>Install <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">awscli</a>, <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html">kubectl</a> and <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html">eksctl</a> which are needed to execute the commands in your terminal.</p>
+<p>Create an Amazon EKS cluster named eksworkshop-dapr using this example cluster-config.yaml</p>
+<pre tabindex="0"><code>apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eksworkshop-dapr
+  region: us-east-2
+  version: &#34;1.31&#34;
+  tags:
+    karpenter.sh/discovery: eksworkshop-dapr
+
+iam:
+  withOIDC: true
+
+managedNodeGroups:
+  - name: default
+    desiredCapacity: 3
+    minSize: 3
+    maxSize: 5
+    instanceType: m7i.large
+    privateNetworking: true
+
+addons:
+  - name: vpc-cni 
+    attachPolicyARNs:
+      - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+  - name: coredns
+    version: latest 
+  - name: kube-proxy
+    version: latest
+  - name: aws-ebs-csi-driver
+    wellKnownPolicies: 
+      ebsCSIController: true
+</code></pre><p>Run this command to apply yaml and create your Amazon EKS cluster.</p>
+<pre tabindex="0"><code>eksctl create cluster -f cluster-config.yaml
+</code></pre><p>Before proceeding with your application deployment, you’ll need to configure the security settings to enable proper Dapr sidecar communication. Use the following command to update the security rule to allow your Amazon EKS cluster to communicate with the Dapr sidecar.</p>
+<pre tabindex="0"><code>aws ec2 authorize-security-group-ingress --region [your_aws_region] \
+--group-id [your_security_group] \
+--protocol tcp \
+--port 4000 \
+--source-group [your_security_group]
+</code></pre><p>Next you will add a default storage class which is needed for the Dapr <a href="https://docs.dapr.io/operations/hosting/kubernetes/kubernetes-persisting-scheduler/">scheduler</a> to function properly.</p>
+<pre tabindex="0"><code>kubectl patch storageclass gp2 -p &#39;{&#34;metadata&#34;: {&#34;annotations&#34;:{&#34;storageclass.kubernetes.io/is-default-class&#34;:&#34;true&#34;}}}&#39;
+</code></pre><p>Next run this command to confirm that Amazon EKS nodes are up and running.</p>
+<pre tabindex="0"><code>kubectl get nodes
+</code></pre><p>You should get output like this.</p>
+<pre tabindex="0"><code>ip-192-168-117-234.us-east-2.compute.internal Ready &lt;none&gt; 7m46s v1.31.7-eks-473151a
+ip-192-168-141-0.us-east-2.compute.internal   Ready &lt;none&gt; 7m47s v1.31.7-eks-473151a
+ip-192-168-179-109.us-east-2.compute.internal Ready &lt;none&gt; 7m47s v1.31.7-eks-473151a
+</code></pre><p>The sample application leverages the AWS Load Balancer Controller, a component that orchestrates AWS Elastic Load Balancers within your Kubernetes cluster. To get started, install the AWS Load Balancer Controller by following the steps <a href="https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html">here</a>.</p>
+<h3 id="2-install-dapr-on-your-amazon-eks-cluster">2. Install DAPR on your Amazon EKS cluster</h3>
+<p>In this step you will install Dapr CLI and use it as the tool for Dapr related tasks like installing Dapr and listing Dapr components.</p>
+<p>Run this command to install the latest Linux Dapr CLI to /usr/local/bin</p>
+<pre tabindex="0"><code>wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash
+</code></pre><p>You can verify the Dapr CLI installation by running this command.</p>
+<pre tabindex="0"><code>dapr -h
+</code></pre><p>Next, install Dapr by using this command in your cluster context.</p>
+<pre tabindex="0"><code>dapr init -k
+</code></pre><p>You can verify Dapr Installation by running this command.</p>
+<pre tabindex="0"><code>dapr status -k
+</code></pre><p>You should get output like this</p>
+<pre tabindex="0"><code>dapr-placement-server dapr-system True Running 1 1.15.4 1m 2025-05-12 17:38.08 
+dapr-dashboard dapr-system        True Running 1 0.15.0 1m 2025-05-12 17:38.10 
+dapr-sentry dapr-system           True Running 1 1.15.4 1m 2025-05-12 17:38.08 
+dapr-operator dapr-system         True Running 1 1.15.4 1m 2025-05-12 17:38.08 
+dapr-sidecar-injector dapr-system True Running 1 1.15.4 1m 2025-05-12 17:38.08 
+dapr-scheduler-server dapr-system True Running 3 1.15.4 1m 2025-05-12 17:38.08
+</code></pre><h3 id="3-set-up-amazon-elasticache-as-state-store">3. Set up Amazon ElastiCache as state store</h3>
+<p>In this step, you’ll create a state store for your sample application using <a href="https://aws.amazon.com/elasticache/?p=pm&amp;c=database&amp;pd=ecache&amp;z=4">Amazon ElastiCache Serverless</a>. This managed service automatically scales to meet your application’s traffic demands without requiring server management.</p>
+<p>To keep it simple, create an Amazon ElastiCache serverless instance in the same VPC as your Amazon EKS cluster. Configure the security group to allow incoming connections from your Amazon EKS cluster. Note down the cache endpoint, you will need this in step 5 while applying Dapr configurations.</p>
+<p><img src="../../images/3-BlogsTranslated/3.10-Blog10/Dapr-Architecture_2.png" alt=""></p>
+<h3 id="4-sample-application">4. Sample Application</h3>
+<p>In this step you need to clone a sample application from Dapr Quickstarts. Dapr Quickstarts has sample applications to get you started quickly with Dapr. For this tutorial we’ll use the sample applications node app and Python app which are in the hello-kubernetes directory.</p>
+<pre tabindex="0"><code>git clone https://github.com/dapr/quickstarts.git
+</code></pre><h3 id="5-configuring-the-dapr-state-store-component">5. Configuring the Dapr State Store Component</h3>
+<p>In this step, you’ll create and configure the Dapr state store component to communicate with Amazon ElastiCache.</p>
+<p>Create a file named redis-state.yaml with the following state store configurations. Replace the redisHost value with your Amazon ElastiCache endpoint from Step 3.</p>
+<p>UPDATE apiVersion: dapr.io/v1alpha1 kind: Component metadata: name: statestore namespace: default spec: type: state.redis version: v1 metadata:</p>
+<ul>
+<li>name: redisHost value: redisdaprd-7rr1vd.serv3rless.use1.cache.amazonaws.com:6379</li>
+<li>name: enableTLS value: true</li>
+</ul>
+<p>Apply the configuration to your cluster.</p>
+<pre tabindex="0"><code>kubectl apply -f redis-state.yaml
+</code></pre><h3 id="6-deploying-microservices-with-dapr-sidecars">6. Deploying Microservices with Dapr Sidecars</h3>
+<p>In this step you will deploy two microservices: a Node app which processes orders and a Python app which has the business logic to generate new orders. You obtained these apps in step 4 from Dapr Quickstart.</p>
+<p>To deploy the microservice Node app, navigate to /quickstarts/tutorials/hello-kubernetes/deploy/node.yaml file. Note the crucial Dapr annotations.</p>
+<p>The annotation tells the Dapr control plane to inject a side car and assigns a name to the Dapr application.</p>
+<pre tabindex="0"><code>annotations:
+        dapr.io/enabled: &#34;true&#34;
+        dapr.io/app-id: &#34;nodeapp&#34;
+        dapr.io/app-port: &#34;3000
+</code></pre><p>Add AWS Load Balancer annotation to create an internet-facing AWS Load Balancer.</p>
+<pre tabindex="0"><code>kind: Service
+apiVersion: v1
+metadata:
+  name: nodeapp
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: &#34;internet-facing&#34;
+  labels:
+    app: node
+spec:
+  selector:
+    app: node
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
+  type: LoadBalancer
+</code></pre><p>Next, deploy the node app using kubectl. Navigate to the directory /quickstarts/tutorials/hello-kubernetes/deploy and execute this command.</p>
+<pre tabindex="0"><code>kubectl apply -f node.yaml
+</code></pre><p>Next, retrieve the load balancer endpoint. It appears under External IP on the output of the following command.</p>
+<pre tabindex="0"><code>kubectl get svc nodeapp
+
+http://k8s-default-nodeapp-3a173exxxx-f7b14bedf0c4dd8.elb.us-east-2.amazonaws.com
+</code></pre><p>Now that your service is deployed, let’s verify that it is working correctly. You’ll test the order submission functionality using a sample JSON payload.</p>
+<p>Navigate to the directory /quickstarts/tutorials/hello-kubernetes which has sample.json file to execute this step.</p>
+<pre tabindex="0"><code>curl --request POST --data &#34;@sample.json&#34; --header Content-Type:application/json http://k8s-default-nodeapp-3a173exxxx-f14bedff0c4dd8.elb.us-east-2.amazonaws.com/neworder
+</code></pre><p>You can verify the output by accessing /order endpoint using the load balancer in a browser.</p>
+<p><a href="http://k8s-default-nodeapp-3a173exxxx-f7b14bedff0c4dd8.elb.us-east-2.amazonaws.com/order">http://k8s-default-nodeapp-3a173exxxx-f7b14bedff0c4dd8.elb.us-east-2.amazonaws.com/order</a></p>
+<p>You will get output similar to {“OrderId”:“42”}</p>
+<p>To complete your microservices setup, you’ll now deploy a Python application that has a business logic to generate a new order id every second. It automatically invokes /neworder endpoint of the nodeapp application.</p>
+<p>Navigate to the directory /quickstarts/tutorials/hello-kubernetes/deploy and execute this command.</p>
+<pre tabindex="0"><code>kubectl apply -f python.yaml
+</code></pre><h3 id="7-validating-your-dapr-enabled-microservices">7. Validating your Dapr enabled Microservices</h3>
+<p>Let’s verify that your microservices architecture is functioning correctly by checking the logs and endpoints.</p>
+<p>Monitor the Python app service’s Dapr sidecar logs to confirm it’s generating and sending orders. Run the following command and you should get continuous HTTP API calls with method=”POST /neworder”</p>
+<pre tabindex="0"><code>kubectl logs --selector=app=python -c daprd --tail=-1
+time=&#34;2024-03-07T12:43:11.556356346Z&#34; level=info msg=&#34;HTTP API Called&#34; app_id=pythonapp instance=pythonapp-974db9877-dljtw method=&#34;POST /neworder&#34; scope=dapr.runtime.http-info type=log useragent=python-requests/2.31.0 ver=1.12.5
+time=&#34;2024-03-07T12:43:12.563193147Z&#34; level=info msg=&#34;HTTP API Called&#34; app_id=pythonapp instance=pythonapp-974db9877-dljtw method=&#34;POST /neworder&#34; scope=dapr.runtime.http-info type=log useragent=python-requests/2.31.0 ver=1.12.5
+</code></pre><p>Next, check the Node app application logs to confirm order processing and state persistence. Run this command and you should get order processing confirmations.</p>
+<pre tabindex="0"><code>kubectl logs —selector=app=node -c node —tail=-1
+
+
+Got a new order! Order ID: 367
+Successfully persisted state for Order ID: 367
+Got a new order! Order ID: 368
+Successfully persisted state for Order ID: 368
+Got a new order! Order ID: 369
+Successfully persisted state for Order ID: 369
+</code></pre><p>You can also confirm whether orders are being properly stored in Amazon ElastiCache. You can append /order to the application load balancer. It returns the latest order id which was generated by the Python app.</p>
+<p><a href="http://k8s-default-nodeapp-3a173exxxx-f7b14beff0c4dd8.elb.us-east-2.amazonaws.com/order">http://k8s-default-nodeapp-3a173exxxx-f7b14beff0c4dd8.elb.us-east-2.amazonaws.com/order</a></p>
+<p>You will get an output with most recent order as as {“OrderId”:“370”}</p>
+<h3 id="8-visualizing-your-dapr-components-with-the-dashboard">8. Visualizing your Dapr Components with the Dashboard</h3>
+<p>Dapr provides a powerful dashboard that helps you monitor your applications, configurations, components, and logs. You can set it up with external access through Elastic Load Balancing (ELB).</p>
+<p>In this section you will create a yaml file for the dashboard and apply to your Amazon EKS cluster.</p>
+<p>Create a yaml file called dashboard.yaml with these annotations.</p>
+<pre tabindex="0"><code>kind: Service
+apiVersion: v1
+metadata:
+  name: dapr-mydashboard
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: &#34;internet-facing&#34;
+  namespace: dapr-system  
+  labels:
+    app: dapr-dashboard
+spec:
+  selector:
+    app: dapr-dashboard
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: LoadBalancer
+</code></pre><p>Navigate to the directory where dashboard.yaml is placed and execute this command to create a service</p>
+<pre tabindex="0"><code>kubectl apply -f dashboard.yaml
+</code></pre><p>Next, retrieve the ELB endpoint from dapr-mydasboard by executing the following command. We’ll use this endpoint to access the dashboard.</p>
+<pre tabindex="0"><code>kubectl get svc dapr-mydashboard -n dapr-system
+</code></pre><p>Access the Dapr dashboard using the ELB endpoint which we just retrieved. Here is an example endpoint URL and screen capture.</p>
+<p><a href="http://k8s-daprsyst-daprdash-ca3914xxxx-b507661502aa8eb.elb.us-east-2.amazonaws.com/overview">http://k8s-daprsyst-daprdash-ca3914xxxx-b507661502aa8eb.elb.us-east-2.amazonaws.com/overview</a></p>
+<p><img src="../../images/3-BlogsTranslated/3.10-Blog10/Dapr-Architecture_3.png" alt=""></p>
+<p>The Dapr dashboard provides a detailed view of all Dapr applications, components and configurations running on Amazon EKS from one single place.</p>
+<h2 id="clean-up">Clean up</h2>
+<p>Run the following command to delete the deployments Node app and Python app with the state store component.</p>
+<p>Navigate to the directory /quickstarts/tutorials/hello-kubernetes/deploy to execute the following commands.</p>
+<pre tabindex="0"><code>kubectl delete -f node.yaml
+kubectl delete -f python.yaml
+</code></pre><p>You can tear down your Amazon EKS cluster using the eksctl command and delete Amazon ElascticCache.</p>
+<p>Navigate to the directory which has cluster.yaml file use to create the cluster in first step.</p>
+<pre tabindex="0"><code>eksctl delete cluster -f cluster-config.yaml 
+</code></pre><h2 id="conclusion">Conclusion</h2>
+<p>In this post, you’ve seen how the combination of Dapr and Amazon EKS simplifies microservices development and deployment.</p>
+<p>This solution offers several key benefits:</p>
+<ul>
+<li>Dapr abstracts away complex distributed system patterns</li>
+<li>Amazon EKS handles the heavy lifting of Kubernetes management</li>
+<li>Developers can focus purely on business logic</li>
+<li>Built-in support for critical capabilities like state management and service-to-service communication</li>
+</ul>
+<p>Where to go from here:</p>
+<ul>
+<li>Explore Dapr’s distributed tracing capabilities</li>
+<li>Check out Dapr’s additional building blocks for features like pub/sub and secrets management</li>
+<li>Scale your microservices architecture with Amazon EKS’s robust orchestration</li>
+</ul>
+<p>By leveraging Dapr on Amazon EKS, you can accelerate your microservices development while maintaining enterprise-grade reliability and scalability. The combination provides a production-ready foundation for modern, cloud-native applications.</p>
+<p>To learn more, visit the <a href="https://docs.dapr.io/">Dapr documentation</a> and <a href="https://docs.aws.amazon.com/eks/">Amazon EKS documentation</a>.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../3-blogstranslated/3.9-blog9/" title="Blog 9"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../3-blogstranslated/3.11-blog11/" title="Blog 11" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1765275112"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765275112"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765275112"></script>
+    <script src="../../js/jquery.sticky.js?1765275112"></script>
+    <script src="../../js/featherlight.min.js?1765275112"></script>
+    <script src="../../js/highlight.pack.js?1765275112"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765275112"></script>
+    <script src="../../js/learn.js?1765275112"></script>
+    <script src="../../js/hugo-learn.js?1765275112"></script>
+
+    <link href="../../mermaid/mermaid.css?1765275112" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765275112"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

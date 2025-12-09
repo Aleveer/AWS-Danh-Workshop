@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="danhanh.nguyen1643@gmail.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 6 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1765275113" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765275113" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765275113" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765275113" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765275113" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765275113" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765275113" rel="stylesheet">
+    <link href="../../../css/theme.css?1765275113" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765275113" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1765275113" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1765275113"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.6-blog6/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1765275113"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765275113"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1765275113"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký hàng tuần"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký hàng tuần 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12. </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.5-blog5/">
+     <b> 3.5. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.7-blog7/"
+  title="Blog 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.7-blog7/">
+     <b> 3.7. </b> Blog 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.8-blog8/"
+  title="Blog 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.8-blog8/">
+     <b> 3.8. </b> Blog 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.9-blog9/"
+  title="Blog 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.9-blog9/">
+     <b> 3.9. </b> Blog 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.10-blog10/"
+  title="Blog 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.10-blog10/">
+     <b> 3.10. </b> Blog 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.11-blog11/"
+  title="Blog 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.11-blog11/">
+     <b> 3.11. </b> Blog 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.12-blog12/"
+  title="Blog 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.12-blog12/">
+     <b> 3.12. </b> Blog 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/"
+  title="Thiết lập Infrastructure với Terraform"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/">
+     <b> 5.3. </b> Thiết lập Infrastructure với Terraform 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.1-provider/"
+  title="Cấu hình Provider"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.1-provider/">
+     <b> 5.3.1. </b> Cấu hình Provider 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.2-variables/"
+  title="Cấu hình Variables"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.2-variables/">
+     <b> 5.3.2. </b> Cấu hình Variables 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.3-env-variable/"
+  title="Cấu hình Variables cục bộ"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.3-env-variable/">
+     <b> 5.3.3. </b> Cấu hình Variables cục bộ 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/"
+  title="Cấu hình S3 Bucket"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/">
+     <b> 5.3.4. </b> Cấu hình S3 Bucket 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.5-ecr/"
+  title="Cấu hình ECR Repository"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.5-ecr/">
+     <b> 5.3.5. </b> Cấu hình ECR Repository 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/"
+  title="Cấu hình ECS Cluster"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/">
+     <b> 5.3.6. </b> Cấu hình ECS Cluster 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.7-alb/"
+  title="Cấu hình Application Load Balancer và Target Group"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.7-alb/">
+     <b> 5.3.7. </b> Cấu hình Application Load Balancer và Target Group 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.8-iam/"
+  title="Cấu hình IAM Roles và Policies"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.8-iam/">
+     <b> 5.3.8. </b> Cấu hình IAM Roles và Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/"
+  title="Cấu hình CloudWatch Logs &amp; ECS Service"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/">
+     <b> 5.3.9. </b> Cấu hình CloudWatch Logs &amp; ECS Service 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.10-budgets/"
+  title="Cấu hình AWS Budgets"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.10-budgets/">
+     <b> 5.3.10. </b> Cấu hình AWS Budgets 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-infra-terraform/5.3.11-vpc/"
+  title="Cấu hình VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-infra-terraform/5.3.11-vpc/">
+     <b> 5.3.11. </b> Cấu hình VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-docker-deploybe/"
+  title="Build Docker Image và Deploy Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-docker-deploybe/">
+     <b> 5.4. </b> Build Docker Image và Deploy Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/"
+  title="Triển khai Frontend với Amazon Amplify và thực hiện kết nối an toàn với API của Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/">
+     <b> 5.5 </b> Triển khai Frontend với Amazon Amplify và thực hiện kết nối an toàn với API của Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.1-deploy-frontend/"
+  title="Triển khai Frontend với Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.1-deploy-frontend/">
+     <b> 5.5.1 </b> Triển khai Frontend với Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.2-connect-be-fe/"
+  title="Cấu hình để kết nối giữa Frontend và Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.2-connect-be-fe/">
+     <b> 5.5.2 </b> Cấu hình để kết nối giữa Frontend và Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.3-custom-domain-be/"
+  title="Cấu hình Custom Domain với Route53 và xác thực SSL với AWS Certificate Manager"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.3-custom-domain-be/">
+     <b> 5.5.3 </b> Cấu hình Custom Domain với Route53 và xác thực SSL với AWS Certificate Manager 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/"
+  title="Tùy chỉnh Domain cho Amplify Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/">
+     <b> 5.5.4 </b> Tùy chỉnh Domain cho Amplify Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/workshop-template/3-blogstranslated/3.6-blog6/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/workshop-template/vi/3-blogstranslated/3.6-blog6/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 6
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#use-case">Use Case</a></li>
+    <li><a href="#phương-pháp-tiếp-cận">Phương pháp tiếp cận</a></li>
+    <li><a href="#best-practices">Best practices</a>
+      <ul>
+        <li><a href="#kết-luận">Kết luận</a></li>
+        <li><a href="#tham-gia-thảo-luận-về-sap-trên-aws">Tham gia thảo luận về SAP trên AWS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 6
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="tối-ưu-hóa-thời-gian-ngừng-hoạt-động-chuyển-đổi-unicode-cho-hệ-thống-sap-trên-oracle-sang-aws">Tối Ưu Hóa Thời Gian Ngừng Hoạt Động Chuyển Đổi Unicode Cho Hệ Thống SAP Trên Oracle Sang AWS</h1>
+<p>Các tổ chức toàn cầu sử dụng hệ thống SAP cần xử lý dữ liệu bằng nhiều ngôn ngữ. <a href="https://www.unicode.org/standard/WhatIsUnicode.html">Unicode</a> cung cấp một cách tiêu chuẩn hóa để biểu diễn và xử lý dữ liệu văn bản từ các ngôn ngữ này, đảm bảo hiển thị và xử lý nhất quán trên các hệ thống và nền tảng khác nhau. SAP khuyến nghị sử dụng Unicode cho tất cả các cài đặt mới và chuyển đổi từ các hệ thống không phải Unicode để đảm bảo tính tương thích, tính toàn vẹn dữ liệu và hỗ trợ cho các hoạt động toàn cầu. Các bản phát hành SAP mới nhất, chẳng hạn như <a href="https://help.sap.com/docs/SAP_ERP">SAP ERP 6.0 EHP8</a> và <a href="https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE">SAP S/4HANA</a>, chỉ có sẵn dưới dạng Unicode, làm cho nó trở thành điều kiện tiên quyết để hệ thống nguồn tương thích với Unicode trước khi nâng cấp lên bản phát hành cao hơn.</p>
+<p>Để đảm bảo quá trình chuyển đổi mượt mà sang SAP S/4HANA, khách hàng cần ưu tiên việc áp dụng Unicode trong hệ thống của họ, xem xét hỗ trợ bảo trì chính cho ERP 6.0 dự kiến kết thúc vào ngày 31 tháng 12 năm 2027 theo <a href="https://me.sap.com/notes/1648480">SAP Note 1648480</a> – Bảo trì cho Phần mềm SAP Business Suite 7 bao gồm SAP NetWeaver (yêu cầu đăng nhập SAP Support).</p>
+<p>Việc chuyển đổi hệ thống SAP sang Unicode liên quan đến việc quản lý nhiều thách thức kỹ thuật: chuyển đổi dữ liệu, khắc phục mã, thời gian ngừng hoạt động theo kế hoạch, kiểm tra và xác thực, tác động hiệu suất, và điều chỉnh giao diện. Các cơ sở dữ liệu SAP lớn (10 TB+) yêu cầu 1-3 ngày ngừng hoạt động cho việc chuyển đổi Unicode. Quy trình cần thêm dung lượng phần cứng để giảm thiểu thời gian ngừng hoạt động. Các tổ chức có cơ sở hạ tầng hết hạn sử dụng phải cân bằng giữa đầu tư phần cứng và yêu cầu thời gian ngừng hoạt động.</p>
+<p>Trong blog này, chúng tôi giải quyết các thách thức mà một khách hàng gặp phải liên quan đến thời gian ngừng hoạt động hệ thống và trình bày một trường hợp sử dụng nơi <a href="https://d1.awsstatic.com/events/Summits/toronto24/TEL201_TurbochargingSAP_E2_TORSummit_20240911.pdf">Bell Canada</a>, một trong những công ty viễn thông lớn nhất Canada, đã theo đuổi một cách tiếp cận thay thế để di chuyển hệ thống SAP ERP không phải Unicode 11 TB của họ chạy với cơ sở dữ liệu Oracle sang AWS trong vòng dưới 5 giờ.</p>
+<h2 id="background">Background</h2>
+<p>Khách hàng chạy hệ thống SAP ERP không phải Unicode của họ với cơ sở dữ liệu Oracle phải chuyển đổi trước tiên hệ thống SAP không phải Unicode (NUC) của họ sang Unicode (UC) trước khi di chuyển sang S/4HANA theo <a href="https://me.sap.com/notes/2033243/E">SAP Note 2033243</a>. Ngoài ra, khi di chuyển hệ thống SAP chạy trên cơ sở dữ liệu Oracle sang AWS, khách hàng phải chuyển đổi sang hệ thống Unicode vì lý do hỗ trợ, như được nêu trong <a href="https://me.sap.com/notes/2358420">SAP Note 2358420</a>.</p>
+<p>Trong trường hợp như vậy, khách hàng thực hiện chuyển đổi Unicode như một bước đầu tiên khi di chuyển sang AWS. Một khi hệ thống hoạt động trên AWS, họ nâng cấp từ SAP ECC sang S/4HANA, tận dụng các dịch vụ đám mây có khả năng mở rộng của AWS.</p>
+<p>Đối với các chuyển đổi Unicode, quy trình SAP được ghi nhận liên quan đến việc xuất dữ liệu hệ thống SAP từ hệ thống nguồn tại chỗ, chuyển dữ liệu đã xuất sang AWS sử dụng các dịch vụ như <a href="https://aws.amazon.com/directconnect/">AWS Direct Connect</a> hoặc <a href="https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html">AWS Site-to-Site VPN</a>, và sau đó nhập nó vào hệ thống mục tiêu chạy trên AWS. Thời lượng chính xác thay đổi dựa trên các yếu tố như dung lượng phần cứng, băng thông mạng khả dụng, công cụ di chuyển được sử dụng, và các phương pháp cụ thể được sử dụng.</p>
+<p>Khi xử lý các khối lượng công việc SAP, liên quan đến nhiều tích hợp bên thứ ba, việc giảm thiểu thời gian ngừng hoạt động là cần thiết để đảm bảo tính liên tục kinh doanh và ngăn chặn gián đoạn các quy trình quan trọng. Do đó, việc áp dụng các chiến lược và kỹ thuật có thể giảm thiểu thời gian ngừng hoạt động di chuyển là rất quan trọng.</p>
+<h2 id="use-case">Use Case</h2>
+<p>Bell Canada đang vận hành hệ thống SAP ERP của họ với cơ sở dữ liệu Oracle 19c tại chỗ với Red Hat Enterprise Linux 8 (RHEL8) làm hệ điều hành. Kích thước cơ sở dữ liệu sản xuất khoảng 11 TB. Bell Canada muốn giữ nguyên cơ sở dữ liệu Oracle và khi di chuyển sang AWS, nó yêu cầu có hệ điều hành Oracle Enterprise Linux để hỗ trợ Oracle, theo <a href="https://me.sap.com/notes/2358420">SAP Note 2358420</a>. Ngoài ra, hệ thống SAP cần được chuyển đổi sang Unicode. Thời gian ngừng hoạt động kinh doanh tối đa được phê duyệt cho di chuyển là 32 giờ, với tối đa 10 giờ cho phép chuyển đổi kỹ thuật.</p>
+<p>Chúng tôi xác định một cách tiếp cận di chuyển loại bỏ phần cứng tại chỗ bổ sung và tuân theo các thực hành tốt nhất cho các chuyển đổi AWS. Kế hoạch ưu tiên thời gian chuyển đổi kỹ thuật tối thiểu trong khi phân bổ nhiều thời gian hơn cho các nhiệm vụ cutover. Chúng tôi cũng đánh giá các tùy chọn di chuyển khác nhau và các thực hành tốt nhất như sử dụng các tính năng cơ sở dữ liệu nâng cao, xử lý song song, hoặc các kỹ thuật tối ưu hóa khác.</p>
+<h2 id="phương-pháp-tiếp-cận">Phương pháp tiếp cận</h2>
+<p>Hãy khám phá các cách tiếp cận khả dụng cho việc di chuyển hệ thống SAP không phải Unicode với cơ sở dữ liệu Oracle (chạy trên RHEL) sang Oracle Enterprise Linux trên AWS.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Approach</th>
+          <th>Description</th>
+          <th>Steps</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Option 1</td>
+          <td>Chuyển đổi Unicode cùng với di chuyển sang AWS giữ nguyên cơ sở dữ liệu Oracle</td>
+          <td>- Di chuyển hệ thống SAP từ trung tâm dữ liệu tại chỗ sang AWS, chuyển đổi từ không phải Unicode sang Unicode trong quá trình.<br>- Thực hiện khắc phục và kiểm tra hệ thống SAP trên AWS, sau đó ngừng sử dụng hệ thống SAP tại chỗ.</td>
+      </tr>
+      <tr>
+          <td>Option 2</td>
+          <td>Di chuyển SAP không phải Unicode sang AWS, sau đó chuyển đổi sang Unicode giữ nguyên cơ sở dữ liệu Oracle</td>
+          <td>- Di chuyển hệ thống SAP từ trung tâm dữ liệu tại chỗ sang AWS sử dụng sao chép cơ sở dữ liệu không đồng bộ trong một hệ thống tạm thời cho đến cutover.<br>- Chuyển đổi từ không phải Unicode sang Unicode trên AWS bằng cách xuất từ hệ thống tạm thời và nhập vào hệ thống cuối cùng.<br>- Thực hiện khắc phục và kiểm tra hệ thống SAP trên AWS, sau đó ngừng sử dụng hệ thống SAP tại chỗ và hệ thống tạm thời.</td>
+      </tr>
+  </tbody>
+</table>
+<p>Bảng 1: Các tùy chọn chuyển đổi Unicode cho SAP trên Oracle sang AWS</p>
+<p>Cả hai tùy chọn di chuyển đều yêu cầu cửa sổ thời gian ngừng hoạt động kinh doanh để chuyển sang môi trường AWS mục tiêu. Trong khi Option 1 cung cấp cách tiếp cận thực thi dự đoán hơn, nó yêu cầu phần cứng tại chỗ bổ sung để hỗ trợ các quy trình xuất tài nguyên cao trong chuyển đổi Unicode SAP và băng thông mạng ổn định để hỗ trợ chuyển dữ liệu từ tại chỗ sang AWS. Hơn nữa, tùy chọn này đòi hỏi hơn 24 giờ ngừng hoạt động kỹ thuật. Để giải quyết những thách thức này, chúng tôi sẽ khám phá Option 2 và thảo luận về cách tiếp cận di chuyển và thực hành tốt nhất của nó.</p>
+<p>Trong Option 2, một hệ thống SAP vanilla không phải Unicode được cung cấp trên <a href="https://aws.amazon.com/ec2/">Amazon Elastic Compute Cloud (Amazon EC2)</a> như một instance tạm thời, và một cài đặt SAP Unicode được thiết lập trên một <a href="https://aws.amazon.com/ec2/">Amazon EC2</a> khác như instance cuối cùng. Instance staging nên được cấu hình với cùng phiên bản phần mềm cơ sở dữ liệu Oracle, bao gồm bản phát hành và bộ vá, như môi trường tại chỗ. Theo <a href="https://me.sap.com/notes/1571295/E">SAP Note 1571295</a> các cài đặt hệ thống SAP không phải Unicode mới không được phép theo mặc định. Do đó, hệ thống SAP không phải Unicode ban đầu được tạo bằng cách thực hiện xuất system copy từ một hệ thống không phải Unicode hiện có nhỏ. Xuất system copy này chỉ được thực hiện một lần, và kết quả xuất được tái sử dụng để xây dựng bất kỳ hệ thống SAP không phải Unicode nào trên tất cả các môi trường. Hệ thống nguồn tại chỗ được di chuyển sang instance staging trên AWS sử dụng sao chép cơ sở dữ liệu không đồng bộ. Đối với sao chép cơ sở dữ liệu Oracle, <a href="https://www.oracle.com/in/database/data-guard/">Oracle Data Guard</a> (ODG) được sử dụng, được bao gồm trong giấy phép Oracle Enterprise Edition được bao gồm trong các mua từ SAP. Sao chép không đồng bộ này hỗ trợ chuyển dữ liệu quy mô terabyte sang AWS trong các hoạt động kinh doanh bình thường. Phương pháp này cho phép chuyển dữ liệu quy mô terabyte sang AWS trong các hoạt động kinh doanh bình thường. Tại thời điểm bắt đầu cửa sổ thời gian ngừng hoạt động thực tế, instance staging tiếp quản và phục vụ như hệ thống nguồn cho chuyển đổi Unicode. Xuất hệ thống SAP được thực hiện trên instance staging, và nhập được thực hiện trên instance SAP cuối cùng.</p>
+<p>Hãy xem xét một thiết lập kiến trúc đơn giản hóa như được hiển thị trong Hình 1 để hiểu quy trình di chuyển cho cách tiếp cận này.</p>
+<p><img src="../../../images/3-BlogsTranslated/3.6-Blog6/image-1-1.jpg" alt="Simplified architectural setup for Unicode conversion and migration"></p>
+<div align="center">
+    <i>Hình 1: Thiết lập kiến trúc đơn giản hóa cho chuyển đổi Unicode và di chuyển</i>
+</div>
+<p>Trong bước đầu tiên, Oracle Data Guard được cấu hình để đồng bộ hóa dữ liệu giữa cơ sở dữ liệu tại chỗ và instance staging trên AWS. Dữ liệu được chuyển từ môi trường tại chỗ sang instance staging qua <a href="https://aws.amazon.com/directconnect/">AWS Direct Connect</a>. Quy trình sao chép tiếp tục cho đến khi bắt đầu quy trình cutover trong cửa sổ thời gian ngừng hoạt động. Sau khi tiếp quản cơ sở dữ liệu trên instance staging, nó trở thành hệ thống nguồn cho xuất hệ thống SAP. Trong bước thứ hai, xuất system copy SAP, bao gồm bất kỳ chuẩn bị cần thiết như chia bảng, được khởi xướng trên instance cơ sở dữ liệu staging. Dump xuất được lưu trữ trên volume <a href="https://aws.amazon.com/ebs/">Amazon Elastic Block Store (Amazon EBS)</a> gắn với instance staging (được gọi là sapdump) và các file dữ liệu Oracle được lưu trữ trên các volume EBS (được gọi là sapdata). Trong bước thứ ba, các file dump xuất được chuyển liên tục sang volume <a href="https://aws.amazon.com/ebs/">Amazon EBS</a> gắn với instance cuối cùng sử dụng Giao thức Chuyển File (FTP) mà không có can thiệp thủ công. Trong bước thứ tư, quy trình nhập được bắt đầu trên instance cơ sở dữ liệu cuối cùng, chạy song song với quy trình xuất. Bằng cách sử dụng cách tiếp cận di chuyển song song sử dụng các công cụ SAP như <a href="https://help.sap.com/docs/SOFTWARE_PROVISIONING_MANAGER">Software Provisioning Manager</a> (SWPM) và <a href="https://help.sap.com/doc/3a697dba3b544d3ab0db197f753088b1/CURRENT_VERSION/en-US/MigrationMonitor7xx.pdf">SAP Migration Monitor</a>, quy trình xuất/nhập được song song hóa. Sau khi hoàn thành xuất/nhập, hệ thống SAP mục tiêu được khởi động, và các bước hậu xử lý được thực hiện trên instance cuối cùng. Sau đó, instance staging được tắt và cuối cùng bị chấm dứt.</p>
+<p>Sơ đồ đơn giản hóa ở trên trong Hình 1 không bao gồm các thành phần liên quan đến thiết lập tính sẵn sàng cao (HA) để đơn giản hóa. Tuy nhiên, các hệ thống sản xuất cần cấu hình tính sẵn sàng cao tùy thuộc vào yêu cầu kinh doanh. Để biết thông tin về thiết lập tính sẵn sàng cao với cơ sở dữ liệu Oracle trên AWS cho các cài đặt SAP NetWeaver, vui lòng tham khảo blog <a href="https://aws.amazon.com/blogs/awsforsap/high-availability-design-and-solution-for-sap-netweaver-installations-with-oracle-data-guard-fast-start-failover/">High availability design and solution for SAP NetWeaver installations with Oracle Data Guard (Fast-Start Failover)</a>.</p>
+<p>Khách hàng nên nhận được sự đồng ý của SAP để tạm thời chạy hệ thống SAP không phải Unicode trong thời lượng cutover (không có bất kỳ người dùng cuối nào trên đó) và xác thực cách tiếp cận qua một proof of concept (POC) ở đầu dự án.</p>
+<h2 id="best-practices">Best practices</h2>
+<p>Hãy đi sâu vào các thực hành tốt nhất đã giúp giảm thiểu thời gian ngừng hoạt động trong chuyển đổi kỹ thuật. Để hiểu rõ hơn điều này, chúng tôi sẽ xem xét các hướng dẫn và thực hành được thực hiện trong từng giai đoạn của di chuyển hệ thống. Hình 2 hiển thị các giai đoạn cấp cao cho chuyển đổi Unicode và di chuyển hệ thống SAP dựa trên Oracle.</p>
+<p><img src="../../../images/3-BlogsTranslated/3.6-Blog6/image-2-1.jpg" alt="Phases in SAP system Unicode conversion and migration based on Oracle"></p>
+<div align="center">
+    <i>Hình 2: Các giai đoạn trong chuyển đổi Unicode và di chuyển hệ thống SAP dựa trên Oracle</i>
+</div>
+<p><strong>Lập kế hoạch</strong></p>
+<p>Trong giai đoạn lập kế hoạch, chúng tôi khuyến nghị xem xét các chiến lược để giảm kích thước các bảng kỹ thuật lớn. Kiểm tra chéo xem các công việc tái tổ chức tiêu chuẩn có được lên lịch để ngăn chặn các bảng kỹ thuật phát triển vô hạn không. Ví dụ, tuân theo các hướng dẫn trong <a href="https://me.sap.com/notes/1616768/E">SAP Note 1616768</a> cho các bảng BALDAT và BALHDR sẽ có lợi nếu các bảng log này đã trở nên quá lớn.</p>
+<p>Quy trình chuyển đổi Unicode yêu cầu các kiểm tra chuẩn bị cụ thể, bao gồm các báo cáo chạy lâu như SDBI_CLUSTER_CHECKS và UCCHECK. Chúng tôi khuyên nên chạy các báo cáo này vài tháng trước khi chuyển đổi thực tế. Cách tiếp cận chủ động này giúp xác định và giảm thiểu các vấn đề tiềm ẩn liên quan đến bảng cluster và cung cấp cái nhìn sâu sắc về nỗ lực phát triển cần thiết cho các điều chỉnh liên quan đến Unicode. Các kiểm tra này là một phần của hướng dẫn chuyển đổi Unicode như được đề cập trong <a href="https://me.sap.com/notes/551344/E">SAP Note 551344</a>.</p>
+<p>Khi chuyển sang Unicode và chuẩn bị cho cơ sở hạ tầng mục tiêu, bạn phải đánh giá các yêu cầu phần cứng liên quan đến Unicode được chỉ định trong <a href="https://me.sap.com/notes/1139642/E">SAP Note 1139642</a>. Việc di chuyển terabyte dữ liệu sẽ cần kết nối mạng đáng tin cậy với băng thông yêu cầu giữa nguồn tại chỗ và AWS, đạt được bằng <a href="https://aws.amazon.com/directconnect/">AWS Direct Connect</a> hoặc <a href="https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html">AWS Site-to-Site VPN</a>.</p>
+<p>Mở các cổng yêu cầu cho các dịch vụ SAP và cơ sở dữ liệu Oracle trong tường lửa liên quan và <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html">security group</a> để duy trì truy cập mạng nhất quán suốt quy trình di chuyển. Đối với các dịch vụ SAP, chẳng hạn như SAP Application Server, SAP Central Services, và SAP Software Provisioning Manager (SWPM), tham khảo tài liệu SAP “ <a href="https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html">TCP/IP Ports of All SAP Products</a>“. Đối với cơ sở dữ liệu Oracle và sao chép Oracle Data Guard, mở <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/oracle-database-component-port-numbers-and-protocols.html">Oracle Net Services Listener port</a> được cấu hình cho các kết nối client Oracle đến cơ sở dữ liệu, cổng LOCAL_LISTENER được cấu hình cho các cơ sở dữ liệu pluggable ứng dụng (PDB) trong kiến trúc <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/introduction-to-the-multitenant-architecture.html">multi-tenant</a> container database (CDB), cũng như các cổng cho listener Oracle Data Guard, nếu không sử dụng các cổng listener Oracle Net tiêu chuẩn. Tất cả các cổng này đều có thể cấu hình thủ công, và bạn nên lấy số cổng thực tế đang sử dụng từ thiết lập hiện tại.</p>
+<p>Nếu cơ sở dữ liệu nguồn được mã hóa, tạo <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/dbimi/using-oracle-wallet-manager.html">Oracle Wallet</a> yêu cầu trên các hệ thống mục tiêu và sao chép tất cả các chứng chỉ SSL cần thiết từ Oracle Wallet của hệ thống nguồn. Ngoài ra, các dịch vụ listener cần được cấu hình để lắng nghe trên giao thức TCPS thay vì giao thức TCP tiêu chuẩn. Những thay đổi giao thức này phải được cập nhật trong các cấu hình tường lửa đã thực hiện trước đó.</p>
+<p>Trong quy trình di chuyển, việc giám sát tổng sử dụng CPU và IOPS (Input/Output Operations Per Second) là rất quan trọng. Tùy thuộc vào sử dụng CPU và IOPS dự kiến trong di chuyển, yêu cầu tăng giới hạn dịch vụ AWS. Khi nâng cấp loại instance để phù hợp với nhiều CPU hơn trong di chuyển, đảm bảo rằng hạn ngạch giới hạn instance EC2 của tài khoản AWS của bạn cho khu vực mục tiêu cho phép loại instance mong muốn và dung lượng CPU. Ví dụ, yêu cầu di chuyển 250.000 IOPS vượt quá giới hạn dịch vụ mặc định 100.000 cho “IOPS cho Provisioned IOPS SSD (io2) volume” và “IOPS modifications cho Provisioned IOPS SSD (io2) volumes”. Trong các trường hợp như vậy, bạn nên chủ động yêu cầu tăng các giới hạn này lên giá trị yêu cầu trước khi khởi xướng di chuyển. Xem xét chi tiết hạn ngạch và giới hạn trong tài liệu <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html">Amazon EC2 quotas</a> và <a href="https://docs.aws.amazon.com/general/latest/gr/ebs-service.html">Amazon EBS limits</a>.</p>
+<p>Trong khi di chuyển sang Unicode, các tham số hệ thống SAP cho hệ thống Unicode mục tiêu sẽ cần được điều chỉnh như được nêu trong <a href="https://me.sap.com/notes/790099/E">SAP Note 790099</a>. Tùy thuộc vào hợp đồng hỗ trợ với SAP, bạn nên xem xét sử dụng dịch vụ “Going Live Functional Upgrade service” do SAP cung cấp, cung cấp các khuyến nghị cơ bản cho hệ thống Unicode. <a href="https://me.sap.com/notes/2360708">SAP Note 2360708</a> cung cấp thêm thông tin về cách yêu cầu dịch vụ hỗ trợ từ SAP. Xem xét thực hiện các thay đổi tham số sớm trong môi trường không sản xuất trước khi bắt đầu kiểm tra chấp nhận người dùng. Cách tiếp cận chủ động này cho phép các đội ngũ kinh doanh và kỹ thuật đánh giá tác động của các thay đổi này và lập kế hoạch tốt hơn cho các điều chỉnh tham số tương tự trong môi trường sản xuất.</p>
+<p><strong>Xây dựng hệ thống</strong></p>
+<p>Trong giai đoạn xây dựng, cơ sở hạ tầng được cung cấp cho cả hệ thống SAP không phải Unicode và Unicode. Hệ thống không phải Unicode phục vụ như một instance staging tạm thời, chỉ được sử dụng trong quy trình di chuyển, trong khi hệ thống Unicode phục vụ như instance cuối cùng. Một khi cơ sở hạ tầng sẵn sàng, các build vanilla SAP được thực hiện cho cả hai hệ thống không phải Unicode và Unicode. Việc xây dựng các hệ thống vanilla này cho phép thực hiện các kiểm tra kỹ thuật chuẩn bị, chẳng hạn như kiểm tra tính sẵn sàng cao, trước. Như luôn luôn, hãy đảm bảo tận dụng lợi ích linh hoạt của đám mây để tắt các instance EC2 của bạn khi chúng không được sử dụng, điều này sẽ giúp giảm chi phí phần cứng.</p>
+<p>Khi thiết kế bố trí đĩa cơ sở dữ liệu, lập kế hoạch số lượng <a href="https://aws.amazon.com/ebs/">Amazon EBS</a> volumes, <a href="https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html">Amazon EBS volume types</a> chẳng hạn như General Purpose SSD (gp3) hoặc Provisioned IOPS SSD (io2), và striping yêu cầu với Logical Volume Manager (LVM) để tối ưu hóa hiệu suất thông lượng.</p>
+<p>Cuối cùng, kiểm tra các hạn chế EC2 của bạn. Như được nêu trong hướng dẫn người dùng <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html">Amazon EBS-optimized instance types</a>, “Hiệu suất EBS của một instance bị giới hạn bởi giới hạn hiệu suất của loại instance, hoặc hiệu suất tổng hợp của các volume gắn kèm, bất kể cái nào nhỏ hơn”. Nếu khối lượng công việc của bạn yêu cầu hiệu suất IOPS cao và nhất quán, độ trễ thấp, độ bền cao, và bạn sẵn sàng trả phí cao cấp, các volume io2 là lựa chọn tốt hơn. Tuy nhiên, nếu khối lượng công việc của bạn có yêu cầu IOPS trung bình và chi phí là mối quan tâm, các volume gp3 là lựa chọn tiết kiệm chi phí hơn trong khi vẫn cung cấp hiệu suất và độ bền tốt. Để biết thêm thông tin chi tiết về đặc tính hiệu suất và trường hợp sử dụng của các volume gp3 và io2, bạn có thể tham khảo tài liệu AWS về <a href="https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html">Amazon EBS volume types</a>.</p>
+<p>Các volume Provisioned IOPS SSD (io2) cung cấp độ bền cao nhất và độ trễ thấp nhất trong số các loại volume <a href="https://aws.amazon.com/ebs/">Amazon EBS</a>, làm cho chúng phù hợp cho các ứng dụng quan trọng với yêu cầu hiệu suất khắt khe. Để biết thêm thông tin chi tiết về các volume Provisioned IOPS SSD (io2), bao gồm đặc tính hiệu suất, cung cấp, và thực hành tốt nhất, vui lòng tham khảo tài liệu AWS về <a href="https://docs.aws.amazon.com/ebs/latest/userguide/provisioned-iops.html#io2-block-express">Provisioned IOPS SSD (io2) Block Express volumes</a>.</p>
+<p>Một ví dụ bố trí đĩa được cung cấp cho một instance cơ sở dữ liệu Oracle trong Bảng 2, bao gồm hai volume <a href="https://aws.amazon.com/ebs/">Amazon EBS</a> io2 6.300 GB và 110.000 IOPS mỗi cái. Với striping, cấu hình này cung cấp thông lượng từ 3437.5 MB/s đến 8.000 MB/s.</p>
+<table>
+  <thead>
+      <tr>
+          <th>EBS Volumes</th>
+          <th>Volume Group</th>
+          <th>Volume Type</th>
+          <th>Description</th>
+          <th>File system</th>
+          <th>EBS Size (GB)</th>
+          <th>IOPS</th>
+          <th>EBS Throughput (at 16 KiB I/O size)</th>
+          <th>EBS Throughput (at 256 KiB I/O size)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Volume 1</td>
+          <td>VG-DB</td>
+          <td>io2</td>
+          <td>Database data files</td>
+          <td>/oracle/<SID>/sapdata&lt;1..n&gt;</td>
+          <td>6,300</td>
+          <td>110,000</td>
+          <td>1,718.75 MB/s</td>
+          <td>4,000 MB/s</td>
+      </tr>
+      <tr>
+          <td>Volume 2</td>
+          <td>VG-DB</td>
+          <td>io2</td>
+          <td>Database data files</td>
+          <td></td>
+          <td>6,300</td>
+          <td>110,000</td>
+          <td>1,718.75 MB/s</td>
+          <td>4,000 MB/s</td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>12,600</td>
+          <td>220,000</td>
+          <td>3,437.5 MB/s</td>
+          <td>8,000 MB/s</td>
+      </tr>
+  </tbody>
+</table>
+<p>Bảng 2: Mẫu bố trí đĩa cho instance cơ sở dữ liệu Oracle</p>
+<p><strong>Thiết lập ODG / Sao chép / Giám sát</strong></p>
+<p>Giải pháp gốc của Oracle, <a href="https://www.oracle.com/database/data-guard/">Oracle Data Guard</a> (ODG), được sử dụng để tạo một bản sao nhất quán về giao dịch của cơ sở dữ liệu tại chỗ trên máy chủ cơ sở dữ liệu staging trong AWS. Ban đầu, <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/getting-started-rman.html">Oracle Recovery Manager</a> (RMAN) được sử dụng để tạo một bản sao của cơ sở dữ liệu tại chỗ trên máy chủ staging. Sau đó, <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/dgbkr/oracle-data-guard-broker-concepts.html">Data Guard Broker</a> được cấu hình cho change data capture (CDC), đảm bảo rằng tất cả các thay đổi dữ liệu được thực hiện trên cơ sở dữ liệu tại chỗ được ghi nhận và áp dụng cho cơ sở dữ liệu staging mục tiêu theo thời gian thực.</p>
+<p>Các kênh song song được sử dụng để tối đa hóa thông lượng sao chép. Vì RMAN sử dụng một large pool dành riêng cho các hoạt động sao lưu và khôi phục, cơ sở dữ liệu staging mục tiêu cần được cấu hình với các tham số LARGE_POOL_SIZE và SGA_MAX_SIZE. Các quy trình máy chủ IO cần được thêm vào người viết cơ sở dữ liệu (DBWR) để tối ưu hóa quy trình viết trong hoạt động khôi phục bằng cách tận dụng khả năng async IO của hệ điều hành.</p>
+<p>Để nâng cao thêm quy trình chuyển đổi, ngay trước cutover, mở rộng instance <a href="https://aws.amazon.com/ec2/instance-types/">Amazon EC2</a> cơ sở dữ liệu staging và mục tiêu để đáp ứng yêu cầu chuyển đổi. Ngoài ra, các điều chỉnh cần thiết cho các tham số cơ sở dữ liệu Oracle, ví dụ MEMORY_TARGET và MEMORY_MAX_TARGET trong các cơ sở dữ liệu được cấu hình với quản lý bộ nhớ tự động, để tận dụng đầy đủ các tài nguyên bổ sung. Trong chuyển đổi, cả hai cơ sở dữ liệu staging và mục tiêu được đặt ở chế độ NOARCHIVELOG để giảm thiểu chi phí liên quan đến lưu trữ log.</p>
+<p><strong>Các bước chuẩn bị Unicode trong thời gian hoạt động / Các bước trước di chuyển</strong></p>
+<p>Chuyển đổi Unicode được thực hiện như một phần của quy trình system copy SAP. Trong quá trình này, hệ thống được xuất từ nguồn ở định dạng Unicode và sau đó được nhập vào hệ thống SAP mục tiêu. <a href="https://help.sap.com/doc/23afa39273d149f5b747805421f54017/CURRENT_VERSION/en-US/SystemCopy_71X_ux_abap.pdf">SAP System Copy Guide</a>, và “Unicode conversion guide” như được đề cập trong <a href="https://me.sap.com/notes/551344/E">SAP Note 551344</a>), cung cấp hướng dẫn chi tiết cho quy trình này.</p>
+<p>Trước khi xuất và nhập Unicode có thể diễn ra, hệ thống phải trải qua một loạt các kiểm tra chuẩn bị, cả trong thời gian hoạt động và thời gian ngừng hoạt động. Các kiểm tra này được nêu trong hướng dẫn chuyển đổi Unicode. Các kiểm tra và báo cáo thời gian hoạt động được thực hiện trên hệ thống tại chỗ, trong khi các báo cáo và kiểm tra yêu cầu thời gian ngừng hoạt động hệ thống được thực hiện trên instance staging trên AWS, sau khi tiếp quản hệ thống.</p>
+<p><strong>Giảm tải</strong></p>
+<p>Trong thời gian ngừng hoạt động kinh doanh theo lịch, các hệ thống được khóa một cách nhẹ nhàng cho người dùng cuối. Một khi các giao diện giao tiếp được dừng, các hệ thống được chuẩn bị cho quy trình di chuyển. Trong giai đoạn này, các nhiệm vụ chuẩn bị được thực hiện như được nêu trong <a href="https://help.sap.com/doc/23afa39273d149f5b747805421f54017/CURRENT_VERSION/en-US/SystemCopy_71X_ux_abap.pdf">SAP system copy guide</a>, bao gồm tạm dừng công việc batch, vô hiệu hóa cảnh báo, dừng xử lý nền, giải quyết các cập nhật bị hủy hoặc đang chờ, và xóa các bảng tạm thời không hợp lệ v.v. Các bước này đảm bảo di chuyển mượt mà bằng cách đưa các hệ thống đến trạng thái nhất quán trước khi các hoạt động di chuyển thực tế bắt đầu.</p>
+<p><strong>Tiếp quản</strong></p>
+<p>Sau khi xác nhận rằng các hệ thống chính và standby được đồng bộ hóa, hệ thống staging (trên AWS) được tiếp quản. Việc tiếp quản này được xác thực sử dụng quy trình <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/dgbkr/examples-using-data-guard-broker-DGMGRL-utility.html#GUID-1403D1C3-8944-42D0-8BDA-21D695C7958A">switchover</a> của Oracle Data Guard (ODG). Sau khi tiếp quản thành công, cấu hình ODG được <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/dgbkr/examples-using-data-guard-broker-DGMGRL-utility.html#GUID-820B4A3F-6FA3-4CC7-A06E-27BE25AB66F4">loại bỏ</a> để ngăn chặn bất kỳ giao tiếp ngược nào từ hệ thống mục tiêu đến môi trường tại chỗ. Sau đó, loại instance và các tham số liên quan đến cơ sở dữ liệu được điều chỉnh trước khi khởi xướng quy trình system copy.</p>
+<p><strong>Sao chép hệ thống (Xuất / Nhập / Giám sát)</strong></p>
+<p>Để tối ưu hóa quy trình system copy, bắt đầu bằng việc xác định các bảng hàng đầu từ danh sách DB02 hệ thống và lập kế hoạch chia các bảng lớn (ví dụ: bảng lớn hơn 20 GB). Các kỹ thuật như Package Splitting và Table Splitting được sử dụng để kích hoạt xử lý song song của xuất và nhập bảng. Chạy <a href="https://help.sap.com/doc/3a697dba3b544d3ab0db197f753088b1/CURRENT_VERSION/en-US/MigrationMonitor7xx.pdf">SAP migration time analyzer</a> có thể cung cấp cái nhìn tổng hợp về xuất và nhập gói, cho phép xác định các cơ hội tối ưu hóa thêm. Bài tập tối ưu hóa này có thể yêu cầu nhiều lần chạy thử để xác định thứ tự đúng.</p>
+<p>Đối với các bảng lớn, việc chia có thể cần thiết để xử lý xuất và nhập song song. Trong khi bạn có tùy chọn sử dụng SAPup/R3ta (theo <a href="https://help.sap.com/doc/23afa39273d149f5b747805421f54017/CURRENT_VERSION/en-US/SystemCopy_71X_ux_abap.pdf">SAP system copy guide section 2.6.4</a>) hoặc một splitter cụ thể cơ sở dữ liệu được hỗ trợ, trong trường hợp di chuyển hệ thống dựa trên Oracle, xem xét sử dụng splitter Oracle để chia bảng hiệu quả theo <a href="https://me.sap.com/notes/1043380/E">SAP Note 1043380</a>.</p>
+<p>Các cài đặt và cấu hình tham số Oracle (ví dụ: db_cache_size, pga_aggregate_target, processes, kích thước PSAPTEMP, và vô hiệu hóa lưu trữ archive) cho system copy dựa trên R3load nên được đặt theo các khuyến nghị từ <a href="https://me.sap.com/notes/936441/E">SAP Note 936441</a>.</p>
+<p>Trong quy trình xuất/nhập di chuyển, một instance EC2 với số lượng CPU cao hơn, RAM, mạng, và dung lượng thông lượng lưu trữ nên được chọn. Ngoài ra, khuyến nghị sử dụng tạm thời các volume EBS io2 với giá trị IOPS được tăng cường để giảm thời gian nhập, sau đó được chuyển đổi lại thành gp3 sau, trong các hoạt động trực tuyến. Kích thước instance được chọn nên có ít nhất số lượng CPU yêu cầu để chạy nhiều quy trình R3load đồng thời và cũng hỗ trợ thông lượng EBS và IOPS đủ để đảm bảo các volume thông lượng cao của bạn không bị giới hạn. Như một quy tắc ngón tay cái, sử dụng gấp ba lần số CPU. Ví dụ, nếu bạn lập kế hoạch chạy 300 quy trình R3load, chọn một instance <a href="https://aws.amazon.com/pm/ec2/">Amazon EC2</a> với tối thiểu 100 vCPUs.</p>
+<p>Thay đổi kích thước instance và điều chỉnh các tham số trong mỗi lần chạy proof of concept (POC) tiếp theo dựa trên các phát hiện. Lập kế hoạch cho nhiều lần lặp POC trong hệ thống thử nghiệm hoặc sandbox với kích thước cơ sở dữ liệu tương tự sản xuất. Sau vài lần chạy POC, bạn nên có cấu hình tối ưu của CPU, RAM, băng thông mạng, thông lượng EBS, và IOPS yêu cầu để hoàn thành chuyển đổi Unicode trong thời gian ngừng hoạt động kỹ thuật mong muốn. Trước hoạt động xuất và nhập, loại instance được thay đổi để đạt hiệu suất tối ưu với CPU cao hơn, bộ nhớ, hiệu suất mạng, và băng thông tối đa. Ví dụ, EC2 <a href="https://aws.amazon.com/ec2/instance-types/r7i/">r7i.48xlarge</a>, được cung cấp bởi bộ xử lý Intel Xeon Scalable Thế hệ 4, cung cấp 192 CPU, 1536 GB bộ nhớ, 50 Gbps Băng thông Mạng, 5000 MB/s Thông lượng EBS Tối đa, và 240000 IOPS Tối đa.</p>
+<p>Việc giám sát thực thi di chuyển là cần thiết, và bạn có thể tận dụng <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html">Amazon CloudWatch</a> để tạo bảng điều khiển giám sát trong cutover. Điều này sẽ giúp xác định bất kỳ nút thắt cổ chai nào hoặc chỉ ra các cơ hội để tinh chỉnh thêm thời gian ngừng hoạt động chuyển đổi Unicode.</p>
+<p>Sử dụng <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html">Amazon CloudWatch dashboards</a>, bạn có thể giám sát các <a href="https://docs.aws.amazon.com/ebs/latest/userguide/using_cloudwatch_ebs.html">EBS metrics</a> liên quan cho thông lượng (VolumeReadBytes, VolumeWriteBytes, hoặc VolumeThroughputPercentage), và IOPS (VolumeReadOps, VolumeWriteOps, hoặc VolumeConsumedReadWriteOps) cho các volume quan trọng chẳng hạn như volume sapdata (dùng cho file sapdata Oracle) và volume sapdump (dùng để lưu trữ dữ liệu xuất/nhập từ hệ thống SAP). Ngoài ra, bạn có thể giám sát sử dụng CPU cùng với các chỉ số khác như thông lượng và IOPS. Nếu các giới hạn không được đạt và <a href="https://help.sap.com/doc/3a697dba3b544d3ab0db197f753088b1/CURRENT_VERSION/en-US/MigrationMonitor7xx.pdf">SAP migration time analyzer</a> hiển thị một số nhiệm vụ mất nhiều thời gian hơn, bạn nên tăng số lượng quy trình R3load và cho phép các nhiệm vụ chậm hơn đó được xử lý trước trong xuất. Bạn có thể kiểm soát thứ tự xuất/nhập bằng thuộc tính orderBy như được mô tả trong phần 2.6.7 của <a href="https://help.sap.com/doc/23afa39273d149f5b747805421f54017/CURRENT_VERSION/en-US/SystemCopy_71X_ux_abap.pdf">SAP system copy guide</a>.</p>
+<p>Khuyến nghị giám sát các volume chứa online redo logs Oracle, có thể được sử dụng cho các cơ chế ghi log trong xuất/nhập. Điều này áp dụng cho cả instance cơ sở dữ liệu staging và instance cơ sở dữ liệu cuối cùng. Bằng cách giám sát chặt chẽ các chỉ số này, bạn có thể xác định các nút thắt cổ chai tiềm ẩn và đưa ra quyết định sáng suốt để tối ưu hóa quy trình chuyển đổi Unicode, đảm bảo di chuyển mượt mà và hiệu quả trong thời gian ngừng hoạt động kỹ thuật mong muốn.</p>
+<p>Hình 3 minh họa một ví dụ về <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html">Amazon CloudWatch Dashboard</a> hiển thị các chỉ số quan trọng.</p>
+<p><img src="../../../images/3-BlogsTranslated/3.6-Blog6/image-3-1.jpg" alt="Amazon CloudWatch Dashboard with important metrics"></p>
+<p><em>Hình 3: Bảng điều khiển Amazon CloudWatch với các chỉ số quan trọng</em></p>
+<p><strong>Các bước sau di chuyển</strong></p>
+<p>Trong giai đoạn này, tất cả các hoạt động hậu chuyển đổi Unicode, hậu di chuyển như được nêu trong hướng dẫn chuyển đổi Unicode SAP như được đề cập trong <a href="https://me.sap.com/notes/551344/E">SAP Note 551344</a> và <a href="https://help.sap.com/doc/23afa39273d149f5b747805421f54017/CURRENT_VERSION/en-US/SystemCopy_71X_ux_abap.pdf">SAP system copy guide</a> được thực hiện. Một khi các hoạt động này hoàn thành, bất kỳ tối ưu hóa nào được thực hiện cụ thể cho di chuyển (ví dụ: kích thước instance, IOPS, thông lượng, tham số SAP/cơ sở dữ liệu) được khôi phục về cài đặt gốc.</p>
+<p>Trước khi bàn giao hệ thống cho xác thực người dùng, đảm bảo rằng một bản sao lưu hệ thống ở nơi và hoạt động đầy đủ. Sau khi di chuyển hoàn thành và được xác thực bởi kinh doanh, hệ thống staging được tắt (và sau đó bị chấm dứt) để tránh chi phí không cần thiết.</p>
+<p>Việc tuân theo các bước được quy định một cách chính xác đảm bảo kiểm tra hậu di chuyển thành công và triển khai sản xuất.</p>
+<h3 id="kết-luận">Kết luận</h3>
+<p>Trong bài đăng blog này, bạn đã học cách <a href="https://www.bell.ca/">Bell Canada</a> tận dụng cơ sở hạ tầng có khả năng mở rộng của AWS để hoàn thành chuyển đổi kỹ thuật Unicode của hệ thống ERP Sản xuất 11 TB của họ trong vòng dưới 5 giờ và di chuyển thành công sang AWS. Cách tiếp cận này dẫn đến giảm 75% thời gian ngừng hoạt động kỹ thuật so với quy trình chuyển đổi và di chuyển Unicode một bước, mất hơn 24 giờ. Ngoài ra, nó loại bỏ nhu cầu về tài nguyên phần cứng tại chỗ bổ sung.</p>
+<p>Bằng cách áp dụng cách tiếp cận này, <a href="https://www.bell.ca/">Bell Canada</a> có thể tối ưu hóa quy trình chuyển đổi Unicode và di chuyển, giảm thiểu gián đoạn kinh doanh và tối đa hóa hiệu quả hoạt động. Khả năng mở rộng và linh hoạt của cơ sở hạ tầng AWS đóng vai trò quan trọng trong việc đạt được thành tựu đáng kể này, cho phép <a href="https://www.bell.ca/">Bell Canada</a> hoàn thành quy trình di chuyển phức tạp trong khung thời gian ngắn hơn đáng kể.</p>
+<p>Trong blog này, chúng tôi đã sử dụng <a href="https://www.oracle.com/in/database/data-guard/">Oracle Data Guard</a> để thiết lập instance staging. Tuy nhiên, có các hạn chế khi thay đổi endianness (Big Endian và Little Endian), chẳng hạn như từ AIX (Big Endian) sang X86_64 (Little Endian), theo tài liệu của Oracle [Data Guard Support for Heterogeneous Primary and Physical Standbys in Same Data Guard Configuration](<a href="https://support.oracle.com/knowledge/Oracle">https://support.oracle.com/knowledge/Oracle</a> Cloud/413484_1.html) (yêu cầu đăng nhập hỗ trợ Oracle). <a href="https://me.sap.com/notes/552464/E">SAP Note 552464</a> hướng dẫn xác định endianness chính xác cho các kiến trúc và hệ điều hành khác nhau. Trong các tình huống mà khách hàng cần di chuyển hệ thống SAP không phải Unicode trên cơ sở dữ liệu Oracle từ nền tảng big-endian sang little-endian, Oracle Cross-Platform Transportable Tablespaces (XTTS) được sử dụng để di chuyển hệ thống không phải Unicode sang AWS theo blog <a href="https://aws.amazon.com/blogs/awsforsap/reducing-downtime-with-oracle-xtts-method-for-cross-platform-sap-migrations/">Reducing downtime with Oracle XTTS method for cross-platform SAP migrations</a>. Một khi hệ thống không phải Unicode có sẵn trên AWS, bạn có thể thực hiện các quy trình xuất và nhập trên AWS theo các bước được nêu trong blog này.</p>
+<h3 id="tham-gia-thảo-luận-về-sap-trên-aws">Tham gia thảo luận về SAP trên AWS</h3>
+<p>Ngoài đội ngũ tài khoản khách hàng của bạn và các kênh <a href="https://aws.amazon.com/contact-us/">AWS Support</a>, AWS cung cấp các diễn đàn Câu hỏi &amp; Trả lời công khai trên <a href="https://aws.amazon.com/blogs/aws/aws-repost-a-reimagined-qa-experience-for-the-aws-community/">re:Post Site</a> của chúng tôi. Đội ngũ Kiến trúc Giải pháp SAP trên AWS của chúng tôi thường xuyên theo dõi chủ đề <a href="https://www.repost.aws/topics/TAujMzs1_ZR3SIaMwia7ln7A/sap-on-aws">SAP on AWS</a> để thảo luận và câu hỏi có thể được trả lời để hỗ trợ bạn. Nếu câu hỏi của bạn không liên quan đến hỗ trợ, hãy xem xét tham gia thảo luận tại <a href="https://www.repost.aws/topics/TAujMzs1_ZR3SIaMwia7ln7A/sap-on-aws">re:Post</a> và thêm vào cơ sở kiến thức cộng đồng.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.5-blog5/" title="Blog 5"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.7-blog7/" title="Blog 7" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1765275113"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765275113"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765275113"></script>
+    <script src="../../../js/jquery.sticky.js?1765275113"></script>
+    <script src="../../../js/featherlight.min.js?1765275113"></script>
+    <script src="../../../js/highlight.pack.js?1765275113"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765275113"></script>
+    <script src="../../../js/learn.js?1765275113"></script>
+    <script src="../../../js/hugo-learn.js?1765275113"></script>
+
+    <link href="../../../mermaid/mermaid.css?1765275113" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765275113"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

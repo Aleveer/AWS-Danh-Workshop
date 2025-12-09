@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="danhanh.nguyen1643@gmail.com" />
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Blog 8 :: Internship Report</title>
+
+    
+    <link href="../../css/nucleus.css?1765275112" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765275112" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765275112" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765275112" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765275112" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765275112" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765275112" rel="stylesheet">
+    <link href="../../css/theme.css?1765275112" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765275112" rel="stylesheet">
+    
+    <link href="../../css/theme-workshop.css?1765275112" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1765275112"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../3-blogstranslated/3.8-blog8/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1765275112"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765275112"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1765275112"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Project Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/">
+     <b> 2. </b> Project Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.5-blog5/">
+     <b> 3.5. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.7-blog7/"
+  title="Blog 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.7-blog7/">
+     <b> 3.7. </b> Blog 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.8-blog8/"
+  title="Blog 8"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.8-blog8/">
+     <b> 3.8. </b> Blog 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.9-blog9/"
+  title="Blog 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.9-blog9/">
+     <b> 3.9. </b> Blog 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.10-blog10/"
+  title="Blog 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.10-blog10/">
+     <b> 3.10. </b> Blog 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.11-blog11/"
+  title="Blog 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.11-blog11/">
+     <b> 3.11. </b> Blog 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.12-blog12/"
+  title="Blog 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.12-blog12/">
+     <b> 3.12. </b> Blog 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title="Prerequisite"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Prerequisite 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/"
+  title="Infrastructure Setup with Terraform"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/">
+     <b> 5.3. </b> Infrastructure Setup with Terraform 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.1-provider/"
+  title="Configure Provider"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.1-provider/">
+     <b> 5.3.1. </b> Configure Provider 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.2-variables/"
+  title="Configure Variables"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.2-variables/">
+     <b> 5.3.2. </b> Configure Variables 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.3-env-variable/"
+  title="Configure Local Variables"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.3-env-variable/">
+     <b> 5.3.3. </b> Configure Local Variables 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/"
+  title="Configure S3 Bucket"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.4-s3-bucket/">
+     <b> 5.3.4. </b> Configure S3 Bucket 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.5-ecr/"
+  title="Configure ECR Repository"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.5-ecr/">
+     <b> 5.3.5. </b> Configure ECR Repository 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/"
+  title="Configure ECS Cluster"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.6-ecs-cluster/">
+     <b> 5.3.6. </b> Configure ECS Cluster 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.7-alb/"
+  title="Configure Application Load Balancer and Target Group"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.7-alb/">
+     <b> 5.3.7. </b> Configure Application Load Balancer and Target Group 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.8-iam/"
+  title="Configure IAM Roles and Policies"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.8-iam/">
+     <b> 5.3.8. </b> Configure IAM Roles and Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/"
+  title="Configure CloudWatch Logs &amp; ECS Service"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.9-cloudwatch-ecsservices/">
+     <b> 5.3.9. </b> Configure CloudWatch Logs &amp; ECS Service 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.10-budgets/"
+  title="Configure AWS Budgets"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.10-budgets/">
+     <b> 5.3.10. </b> Configure AWS Budgets 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-infra-terraform/5.3.11-vpc/"
+  title="Configure AWS VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-infra-terraform/5.3.11-vpc/">
+     <b> 5.3.11. </b> Configure AWS VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-docker-deploybe/"
+  title="Build Docker Image and Deploy Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-docker-deploybe/">
+     <b> 5.4. </b> Build Docker Image and Deploy Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/"
+  title="Deploy Frontend with Amazon Amplify and establish a secure connection with the Backend API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/">
+     <b> 5.5 </b> Deploy Frontend with Amazon Amplify and establish a secure connection with the Backend API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.1-deploy-frontend/"
+  title="Deploy Frontend with Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.1-deploy-frontend/">
+     <b> 5.5.1 </b> Deploy Frontend with Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.2-connect-be-fe/"
+  title="Configure to connect Frontend and Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.2-connect-be-fe/">
+     <b> 5.5.2 </b> Configure to connect Frontend and Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.3-custom-domain-be/"
+  title="Configure Custom Domain with Route53 and SSL verification with AWS Certificate Manager"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.3-custom-domain-be/">
+     <b> 5.5.3 </b> Configure Custom Domain with Route53 and SSL verification with AWS Certificate Manager 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/"
+  title="Customize Domain for Amplify Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deployfe/5.5.4-custom-domain-fe/">
+     <b> 5.5.4 </b> Customize Domain for Amplify Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cleanup/"
+  title="Clean up"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Clean up 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Evaluation"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../6-self-evaluation/">
+    <b>6.</b> Self-Evaluation 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../7-feedback/">
+    <b>7.</b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/workshop-template/3-blogstranslated/3.8-blog8/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/workshop-template/vi/3-blogstranslated/3.8-blog8/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Internship Report</a> > <a href='../../3-blogstranslated/'>Translated Blogs</a> > Blog 8
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#an-agentic-workflow-for-neural-network-design">An agentic workflow for neural network design</a></li>
+    <li><a href="#neural-network-design-through-the-lens-of-gradient-norms">Neural network design through the lens of gradient norms</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 8
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="leveraging-llms-as-an-augmentation-to-traditional-hyperparameter-tuning">Leveraging LLMs as an Augmentation to Traditional Hyperparameter Tuning</h1>
+<p>When seeking to improve machine learning model performance, hyperparameter tuning is often the go-to recommendation. However, this approach faces significant limitations, particularly for complex models requiring extensive training times. In this post, we’ll explore a novel approach that combines gradient norm analysis with Large Language Model (LLM) guidance to intelligently redesign neural network architectures. This method can identify and resolve performance bottlenecks without the computational burden of traditional hyperparameter optimization. Through practical examples, we’ll show how our technique leverages LLMs as architecture advisors, providing targeted recommendations that directly address identified weaknesses in network design.</p>
+<h2 id="background">Background</h2>
+<p>Traditional hyperparameter tuning typically uses <a href="https://en.wikipedia.org/wiki/Bayesian_optimization">Bayesian Optimization</a>, which builds a mathematical model of parameter-performance relationships to efficiently find optimal solutions with fewer evaluations than alternatives like genetic algorithms.</p>
+<p>However, significant practical limitations exist. Without high performance computing, serial execution becomes prohibitively time-consuming—while lightweight models might complete optimization within 24 hours, complex tasks like reinforcement learning or large computer vision datasets often make traditional approaches impractical on local hardware. Cloud solutions like <a href="https://aws.amazon.com/batch/">AWS Batch</a>, <a href="https://aws.amazon.com/pcs/">AWS Parallel Computing Service</a>, or <a href="https://aws.amazon.com/hpc/parallelcluster/">AWS ParallelCluster</a> enable massive parallelization that can deliver substantial ROI for complex models despite additional costs.</p>
+<p>Traditional tuning also requires explicit parameterization of everything you wish to optimize. While simple parameters like learning rate are straightforward to incorporate, evolving entire architectural structures presents significant implementation challenges. Approaches like Neuroevolution of Augmented Topologies (<a href="https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies">NEAT</a>) can address architectural optimization but often sacrifice sample efficiency.</p>
+<p>This is where Large Language Models (LLMs) offer a compelling alternative. LLMs function as surrogate universal experts, synthesizing knowledge across the entire spectrum of neural network development—effectively interpolating decades of human knowledge across specialized domains like computer vision, NLP, and reinforcement learning. They provide architecture recommendations based on collective wisdom embedded in technical literature rather than computationally intensive empirical searches.</p>
+<p>Our approach focuses specifically on using LLMs for neural architecture design and modification based on gradient norm analysis, complementing frameworks like <a href="https://arxiv.org/abs/2402.01881">Liu et al. (2022) AgentHPO</a> that provide more general hyperparameter optimization across diverse ML tasks.</p>
+<h2 id="an-agentic-workflow-for-neural-network-design">An agentic workflow for neural network design</h2>
+<p>In our exploration of LLM-based code modifications, we implemented an agentic workflow to manage iterative reasoning and execution processes. Figure 1 illustrates the complete architecture of our system, which leverages LangGraph for workflow orchestration and decision routing between agents. Our implementation runs on EC2 g6.24xlarge instances equipped with 4x NVIDIA L4 Tensor Core GPUs to handle neural network training. LLM interactions occur through Python API calls to Amazon Bedrock using <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html">Boto3</a>. We utilize different Claude models for specialized tasks: Claude 3.7 Sonnet for testing agents, Claude 3.7 Sonnet with reasoning activated for code writing, and a smaller/faster model such as Claude 3.0 Haiku for report generation and code validation.</p>
+<p><img src="../../images/3-BlogsTranslated/3.8-Blog8/HPCBlog-361-fig1.png" alt="Multi-agent workflow for in-situ neural network design. LLM icon uses Amazon Bedrock API">
+<em>Figure 1: Multi-agent workflow for in-situ neural network design. LLM icon uses Amazon Bedrock API.</em></p>
+<p>Our workflow begins (step 1) with standard mini-batch training while implementing robust error handling—runtime errors are caught and forwarded to an inspector agent for code analysis and correction.</p>
+<p>At regular intervals (every 50-100 epochs), we extract (step 2) key training insights including gradient norms (discussed in next section) and standard metrics like loss and accuracy. This state representation is formatted into a prompt (step 3) for an LLM that assesses health: training stability and issue identification.</p>
+<p><a href="https://www.langchain.com/langgraph">LangGraph</a> is a framework for creating stateful, multi-step workflows with language models. A LangGraph-based decision router (step 4) analyzes the health assessment and directs the workflow toward one of three paths: hyperparameter optimization, neural network structural modifications, or training completion with report generation. For hyperparameter adjustments, the LLM provides recommendations as structured JSON that can be directly applied to training.</p>
+<p>For architectural modifications, we employ two collaborating LLMs: a primary LLM generates new Python modules defining the modified network architecture, while a secondary tester/fixer LLM evaluates the generated code by attempting execution. Through an iterative process between the code writer and code tester/fixer, errors are caught, analyzed, and corrected before saving the finalized code. Once successfully validated with dummy inputs, training restarts (step 5) with the improved architecture.</p>
+<h2 id="neural-network-design-through-the-lens-of-gradient-norms">Neural network design through the lens of gradient norms</h2>
+<p>While traditional metrics like loss and accuracy provide fundamental insights, gradient norm analysis reveals deeper understanding of architecture efficacy. Gradient norms—the magnitude of weight update signals during training—serve as powerful diagnostics that reveal whether a network is excessively deep, insufficiently wide, poorly normalized, or using suboptimal activation functions. Unusually large or small gradient norms often signal specific architectural problems that LLMs can interpret based on patterns observed across decades of neural network research.</p>
+<p>To demonstrate this capability, we’ll experiment with a deliberately flawed computer vision classification model (shown below) trained on <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR</a>, incorporating intentional design weaknesses with an excessively high learning rate (0.1) and basic SGD optimization without momentum or adaptive components.</p>
+<p>By examining how the LLM interprets these gradient norm patterns across training epochs, we’ll observe its ability to diagnose specific architectural deficiencies and recommend appropriate modifications—effectively leveraging the same gradient-based signals that experienced practitioners use to debug network designs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> torch.nn <span style="color:#66d9ef">as</span> nn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CNN</span>(nn<span style="color:#f92672">.</span>Module):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    An extremely simple CNN with a single convolutional layer
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    followed by a fully connected layer for classification.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Uses sigmoid activation instead of ReLU.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        super(CNN, self)<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Single convolutional layer</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>conv1 <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Conv2d(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">16</span>, kernel_size<span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>, padding<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># With no pooling, feature size remains 32x32, so: 32x32x16 = 16384</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>fc <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Linear(<span style="color:#ae81ff">16384</span>, <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(self, x):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Single convolutional layer with sigmoid activation</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>sigmoid(self<span style="color:#f92672">.</span>conv1(x))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># No pooling, so dimensions stay the same</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Flatten for fully connected layer</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>flatten(x, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Classification layer</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>fc(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x
+</span></span></code></pre></div><p>After allowing 50-100 epochs of training to progress, we gave the optimizer sufficient time to locate a suitable optimization valley beyond the initial chaos of weight initialization. At this checkpoint, we presented the training history and gradient norms to Claude 3.7 via Amazon Bedrock, requesting an assessment of model performance and stability (see line 219 here). The LLM responded with a recommendation to alter the neural network architecture, providing the following analysis:</p>
+<pre tabindex="0"><code>&#34;Explanation: While the model shows some minimal improvement (validation accuracy from 17.6% to 19.4% over 50 epochs), progress is extremely slow and erratic. The loss isn&#39;t consistently decreasing, and the model appears to be struggling with fundamental architectural issues. The high learning rate (0.1) combined with SGD optimizer is likely causing training instability given the complex architecture. The lack of batch normalization is also problematic.&#34;
+</code></pre><p>This assessment serves as a critical routing point within our LangGraph workflow. The LLM determined that a complete architectural overhaul was necessary, generating new PyTorch code that introduced significantly greater complexity and modified the loss function. The next code block shows this entirely revised neural network model, which was validated and error-checked by our secondary LLM before implementation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvBlock</span>(nn<span style="color:#f92672">.</span>Module):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    A convolutional block with batch normalization and residual connection
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    to improve gradient flow and training stability
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, in_channels, out_channels, kernel_size<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, stride<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>        super(ConvBlock, self)<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>conv <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Conv2d(in_channels, out_channels, kernel_size<span style="color:#f92672">=</span>kernel_size, 
+</span></span><span style="display:flex;"><span>                             stride<span style="color:#f92672">=</span>stride, padding<span style="color:#f92672">=</span>kernel_size<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>, bias<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>bn <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>BatchNorm2d(out_channels)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># FIX: More explicit handling of skip connection to ensure dimension matching</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> in_channels <span style="color:#f92672">==</span> out_channels <span style="color:#f92672">and</span> stride <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Identity shortcut when dimensions match</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>residual <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Identity()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># 1x1 conv to match both channel dimensions and spatial dimensions (if stride &gt; 1)</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>residual <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Conv2d(in_channels, out_channels, kernel_size<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, 
+</span></span><span style="display:flex;"><span>                                     stride<span style="color:#f92672">=</span>stride, bias<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(self, x):
+</span></span><span style="display:flex;"><span>        identity <span style="color:#f92672">=</span> x
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Main branch</span>
+</span></span><span style="display:flex;"><span>        out <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>conv(x)
+</span></span><span style="display:flex;"><span>        out <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>bn(out)
+</span></span><span style="display:flex;"><span>        out <span style="color:#f92672">=</span> F<span style="color:#f92672">.</span>relu(out)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add residual connection</span>
+</span></span><span style="display:flex;"><span>        out <span style="color:#f92672">=</span> out <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>residual(identity)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># FIX: Added ReLU after addition (standard in ResNet blocks)</span>
+</span></span><span style="display:flex;"><span>        out <span style="color:#f92672">=</span> F<span style="color:#f92672">.</span>relu(out)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> out
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CNN</span>(nn<span style="color:#f92672">.</span>Module):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Improved CNN architecture that addresses gradient flow issues:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    1. Replaces large kernel sizes (15x15) with smaller, more efficient 3x3 kernels
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    2. Adds batch normalization to stabilize gradients
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    3. Uses multiple smaller convolutional layers with residual connections
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    4. Balances FC layers to prevent bottlenecks
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    5. Implements proper pooling strategy to reduce parameter count
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    6. Uses ReLU activations instead of sigmoid for better gradient flow
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    7. Adds dropout for regularization
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, num_classes<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>        super(CNN, self)<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Initial convolution with moderate number of filters</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>conv1 <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Conv2d(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">32</span>, kernel_size<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, padding<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, bias<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>bn1 <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>BatchNorm2d(<span style="color:#ae81ff">32</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Convolutional blocks with gradually increasing filters</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Input: 16x16x32, Output: 16x16x64</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>block1 <span style="color:#f92672">=</span> ConvBlock(<span style="color:#ae81ff">32</span>, <span style="color:#ae81ff">64</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Input: 8x8x64, Output: 8x8x128</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>block2 <span style="color:#f92672">=</span> ConvBlock(<span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">128</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Input: 4x4x128, Output: 4x4x256</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>block3 <span style="color:#f92672">=</span> ConvBlock(<span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">256</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Pooling layers to reduce spatial dimensions</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>pool <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>MaxPool2d(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># More balanced FC layer architecture</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># After 3 pooling operations (32 -&gt; 16 -&gt; 8 -&gt; 4), feature map is 4x4x256 = 4096</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>fc1 <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Linear(<span style="color:#ae81ff">4096</span>, <span style="color:#ae81ff">512</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>fc2 <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Linear(<span style="color:#ae81ff">512</span>, <span style="color:#ae81ff">128</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>fc3 <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Linear(<span style="color:#ae81ff">128</span>, num_classes)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Dropout for regularization</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>dropout <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Dropout(<span style="color:#ae81ff">0.3</span>)  <span style="color:#75715e"># Reduced from 0.5 to prevent too much regularization</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Proper weight initialization for better gradient flow</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_initialize_weights()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_initialize_weights</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Initialize weights using Kaiming initialization for ReLU activations&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> m <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>modules():
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> isinstance(m, nn<span style="color:#f92672">.</span>Conv2d):
+</span></span><span style="display:flex;"><span>                nn<span style="color:#f92672">.</span>init<span style="color:#f92672">.</span>kaiming_normal_(m<span style="color:#f92672">.</span>weight, mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fan_out&#39;</span>, nonlinearity<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> isinstance(m, nn<span style="color:#f92672">.</span>BatchNorm2d):
+</span></span><span style="display:flex;"><span>                nn<span style="color:#f92672">.</span>init<span style="color:#f92672">.</span>constant_(m<span style="color:#f92672">.</span>weight, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>                nn<span style="color:#f92672">.</span>init<span style="color:#f92672">.</span>constant_(m<span style="color:#f92672">.</span>bias, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> isinstance(m, nn<span style="color:#f92672">.</span>Linear):
+</span></span><span style="display:flex;"><span>                nn<span style="color:#f92672">.</span>init<span style="color:#f92672">.</span>kaiming_normal_(m<span style="color:#f92672">.</span>weight, mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fan_out&#39;</span>, nonlinearity<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> m<span style="color:#f92672">.</span>bias <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                    nn<span style="color:#f92672">.</span>init<span style="color:#f92672">.</span>constant_(m<span style="color:#f92672">.</span>bias, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(self, x):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Forward pass with explicit shape tracking comments
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Input shape: [batch_size, 3, 32, 32]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Initial convolution: [batch_size, 3, 32, 32] -&gt; [batch_size, 32, 32, 32]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>conv1(x)
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>bn1(x)
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> F<span style="color:#f92672">.</span>relu(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># First pooling: [batch_size, 32, 32, 32] -&gt; [batch_size, 32, 16, 16]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pool(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Block 1: [batch_size, 32, 16, 16] -&gt; [batch_size, 64, 16, 16]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>block1(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Second pooling: [batch_size, 64, 16, 16] -&gt; [batch_size, 64, 8, 8]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pool(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Block 2: [batch_size, 64, 8, 8] -&gt; [batch_size, 128, 8, 8]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>block2(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Third pooling: [batch_size, 128, 8, 8] -&gt; [batch_size, 128, 4, 4]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pool(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Block 3: [batch_size, 128, 4, 4] -&gt; [batch_size, 256, 4, 4]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>block3(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Flatten: [batch_size, 256, 4, 4] -&gt; [batch_size, 4096]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>flatten(x, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># FC layers with dropout</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> F<span style="color:#f92672">.</span>relu(self<span style="color:#f92672">.</span>fc1(x))  <span style="color:#75715e"># [batch_size, 4096] -&gt; [batch_size, 512]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>dropout(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> F<span style="color:#f92672">.</span>relu(self<span style="color:#f92672">.</span>fc2(x))  <span style="color:#75715e"># [batch_size, 512] -&gt; [batch_size, 128]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>dropout(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Output: [batch_size, 128] -&gt; [batch_size, num_classes]</span>
+</span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>fc3(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> x
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">loss_function</span>(self, outputs, targets):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Custom loss function that helps with gradient scaling.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Uses label smoothing to prevent overconfidence and improve gradient flow.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> nn<span style="color:#f92672">.</span>CrossEntropyLoss(label_smoothing<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>)(outputs, targets)
+</span></span></code></pre></div><p>Interestingly, when the agentic workflow (an autonomous, self-directed process where the AI system makes independent decisions without human intervention) initiates the training process with its revised model, we observe the loss immediately explodes, halting progress. The LLM detects this instability and autonomously implements critical modifications to the optimization strategy, including adjusting the learning rate and transitioning to the Adam optimizer. From this point forward, the LLM continuously (every 50 – 100 epochs) monitors the training dynamics, making iterative adjustments to either the optimization parameters or neural network architecture until it determines training has stabilized sufficiently for the LangGraph implementation to complete the process without further LLM intervention.</p>
+<p>Figure 2 presents a comprehensive analysis of the base model’s performance across 600 training epochs. The top-left panel shows the training loss dropping sharply in the first 25 epochs from approximately 10² to 10¹, after which it flattens completely around 10⁰, indicating the model has stopped meaningful learning despite continued training. This premature convergence is further evidenced in the top-right panel, where training accuracy (blue) oscillates wildly between 7-14% while validation accuracy (orange) remains fixed at approximately 10% throughout the entire training process, confirming no actual learning is occurring.</p>
+<p>The bottom panels provide insight into the gradient behavior. The total gradient norm (bottom-left) initially spikes above 10² before rapidly decreasing and stabilizing around 10⁻¹ for the remainder of training. The layer-specific gradient norms (bottom-right) similarly stabilize after the initial epochs, with different layers’ gradients settling at various magnitudes between 10⁻³ and 10⁻¹. While these gradient patterns appear numerically stable, they fail to drive meaningful parameter updates that would improve model performance, suggesting optimization issues beyond simple gradient instability.
+<img src="../../images/3-BlogsTranslated/3.8-Blog8/HPCBlog-361-fig2.png" alt="Results when using base CNN with no LLM modifications">
+<em>Figure 2: Results when using base CNN with no LLM modifications.</em></p>
+<p>In contrast, Figure 3 showcases the remarkably superior performance of the LLM-designed neural network with its carefully selected optimization hyperparameters. After around 4 LLM design iterations, this model achieves a validation accuracy of approximately 83%, representing a substantial improvement over the baseline. While this is significant progress, it’s worth noting that state-of-the-art models for CIFAR classification currently achieve accuracies above 99% (<a href="https://arxiv.org/pdf/2010.01412">EfficientNet-L2</a>), demonstrating room for further optimization. The gap between our results and cutting-edge manual human tuned likely stems from advanced techniques that our LLM may not have incorporated or been aware of. For instance, optimization approaches like Sharpness Aware Minimization (SAM) have pushed EfficientNet-L2 to record-breaking accuracies by improving generalization through flat minima optimization. Such specialized techniques might lie outside the LLM’s training data or weren’t considered within our experimental constraints. This suggests our approach could benefit significantly from the addition of a RAG system that incorporates recent academic advancements, allowing the LLM to leverage cutting-edge research that may have emerged after its knowledge cutoff. Nevertheless, the performance differential underscores the efficacy of allowing an LLM to dynamically adjust neural network design and training parameters in response to observed training dynamics.</p>
+<p><img src="../../images/3-BlogsTranslated/3.8-Blog8/HPCBlog-361-fig3.png" alt="Results when using CNN design by LLM and optimization parameters chosen by the LLM">
+<em>Figure 3: Results when using CNN design by LLM and optimization parameters chosen by the LLM.</em></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>LLMs offer a powerful alternative to traditional hyperparameter tuning, leveraging synthesized knowledge to improve neural networks without exhaustive parameter searches. Our experimental LLM-designed architecture achieved 83% validation accuracy on CIFAR, substantially outperforming the baseline model. This approach proves especially valuable for practitioners with limited computational resources or those working with models requiring lengthy training cycles.</p>
+<p>A complementary strategy could combine LLMs for major architectural decisions with focused traditional hyperparameter tuning for final refinement, potentially offering the best of both worlds. The complete source code for this project, including our multi-agent LangGraph workflow implementation and all neural network models, is available in our <a href="https://github.com/aws-samples/sample-Leveraging-LLMs-Augmentation-Traditional-Hyperparameter-Tuning/">AWS Samples repository on GitHub</a>. We encourage researchers and practitioners to explore and build upon these findings.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../3-blogstranslated/3.7-blog7/" title="Blog 7"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../3-blogstranslated/3.9-blog9/" title="Blog 9" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1765275112"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765275112"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765275112"></script>
+    <script src="../../js/jquery.sticky.js?1765275112"></script>
+    <script src="../../js/featherlight.min.js?1765275112"></script>
+    <script src="../../js/highlight.pack.js?1765275112"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765275112"></script>
+    <script src="../../js/learn.js?1765275112"></script>
+    <script src="../../js/hugo-learn.js?1765275112"></script>
+
+    <link href="../../mermaid/mermaid.css?1765275112" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765275112"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
