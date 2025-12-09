@@ -121,7 +121,7 @@ To prepare for the workshop environment, you need to set up the following tools 
   
   The result will display the installed Terraform version (e.g., `Terraform v1.14.0`):
   
-  ![Terraform-Version](/images/5-Workshop/5.2-Prerequisite/terraform-Version.png)
+  ![Terraform-Version](/images/5-Workshop/5.2-Prerequisite/terraform-version.png)
   
 #### 3. Install Other Tools
 

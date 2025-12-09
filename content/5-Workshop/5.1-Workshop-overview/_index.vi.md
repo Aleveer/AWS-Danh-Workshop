@@ -32,6 +32,3 @@ Trong workshop này, chúng ta sẽ xây dựng một ứng dụng WebChat hoàn
 + Monitoring và Logging: Sau khi triển khai toàn bộ Backend và Frontend lên nền tàng AWS. Chúng ta cấu hình Amazon CloudWatch Logs để thu thập và theo dõi logs từ ECS tasks, tạo CloudWatch dashboards để giám sát metrics như request count, error rates, và response times. AWS Budgets sẽ được thiết lập để theo dõi và cảnh báo về chi phí sử dụng các dịch vụ AWS.
 
 + Database: Hệ thống sử dụng MongoDB Atlas làm database chính để lưu trữ dữ liệu người dùng, cuộc trò chuyện và tin nhắn.
-
-**Bổ sung Diagram kiến trúc tổng quát**
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)

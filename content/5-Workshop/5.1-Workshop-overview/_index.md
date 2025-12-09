@@ -32,6 +32,3 @@ In this workshop, we will build a complete WebChat application from start to fin
 + Monitoring and Logging: After deploying the entire Backend and Frontend to the AWS platform. We configure Amazon CloudWatch Logs to collect and monitor logs from ECS tasks, create CloudWatch dashboards to monitor metrics such as request count, error rates, and response times. AWS Budgets will be set up to track and alert on AWS service usage costs.
 
 + Database: The system uses MongoDB Atlas as the main database to store user data, conversations, and messages.
-
-**Add overall architecture diagram**
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)

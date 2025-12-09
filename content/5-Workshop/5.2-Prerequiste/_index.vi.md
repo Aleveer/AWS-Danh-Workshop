@@ -121,7 +121,7 @@ Trong workshop này, chúng ta sẽ sử dụng AWS region ap-southeast-2 (Sydne
   
   Kết quả sẽ hiển thị phiên bản Terraform đã cài đặt (ví dụ: `Terraform v1.14.0`):
   
-  ![Terraform-Version](/images/5-Workshop/5.2-Prerequisite/terraform-Version.png)
+  ![Terraform-Version](/images/5-Workshop/5.2-Prerequisite/terraform-version.png)
   
 #### 3. Cài đặt các công cụ khác
 
