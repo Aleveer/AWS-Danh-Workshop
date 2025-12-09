@@ -146,18 +146,6 @@
                 href="http://localhost:1313/workshop-template/4-eventparticipated/4.1-event1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop-template/4-eventparticipated/4.2-event2/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/workshop-template/vi/4-eventparticipated/4.2-event2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/workshop-template/4-eventparticipated/4.2-event2/"
-                />
-  </url><url>
     <loc>http://localhost:1313/workshop-template/</loc>
     <xhtml:link
                 rel="alternate"
